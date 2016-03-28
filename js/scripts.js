@@ -4,7 +4,7 @@ $(document).ready(function() {
 		'fitToView': false
 	});
 
-	$('.home-slider__list').slick({
+	$('.home-slider').slick({
 		autoplay: true,
 		autoplaySpeed: 5000,
 		dots: false,
@@ -18,7 +18,7 @@ $(document).ready(function() {
 		cssEase: 'linear'
 	});
 
-	$('.on-tv-slider__list').slick({
+	$('.home-tv-slider').slick({
 		autoplay: false,
 		autoplaySpeed: 5000,
 		dots: false,
@@ -31,7 +31,7 @@ $(document).ready(function() {
 		variableWidth: true
 	});
 
-	$('.on-radio-slider__list').slick({
+	$('.home-radio-slider').slick({
 		autoplay: false,
 		autoplaySpeed: 5000,
 		dots: false,
@@ -44,7 +44,7 @@ $(document).ready(function() {
 		variableWidth: true
 	});
 
-	$('.last-news-slider__list').slick({
+	$('.home-news-slider').slick({
 		autoplay: false,
 		autoplaySpeed: 5000,
 		dots: false,
@@ -57,7 +57,7 @@ $(document).ready(function() {
 		variableWidth: true
 	});
 
-	$('.last-reclam-slider__list').slick({
+	$('.last-reclam-slider').slick({
 		autoplay: false,
 		autoplaySpeed: 5000,
 		dots: false,
@@ -70,7 +70,7 @@ $(document).ready(function() {
 		variableWidth: true
 	});
 
-	$('.clients-slider__list').slick({
+	$('.clients-slider').slick({
 		autoplay: false,
 		autoplaySpeed: 5000,
 		dots: false,
@@ -83,14 +83,14 @@ $(document).ready(function() {
 		variableWidth: true
 	});
 
-	$('.vacancies-form__attach-button input').on('change', function () {
+	$('.vacancies-form__attach-button input').on('change', function() {
 		$(this).parents('.vacancies-form__attach').find('.vacancies-form__input').val($(this).val());
 	});
 });
 
 $(window).bind('load', function() {
 
-	$('.page-title__text, .js-gradient').pxgradient({
+	$('.js-gradient').pxgradient({
 		step: 2,
 		colors: ['#0087d9','#005dbd'],
 		dir: 'y'

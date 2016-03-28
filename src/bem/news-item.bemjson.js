@@ -6,80 +6,30 @@
 			block: 'content',
 			content: [
 				{
-					block: 'breadcrumbs',
-					content: [
+					block : 'template-breadcrumbs',
+					links: [
 						{
-							elem: 'layout',
-							mix: { block: 'container' },
-							content: [
-								{
-									elem: 'list',
-									content: [
-										{
-											elem: 'item',
-											content: [
-												{
-													tag: 'a',
-													elem: 'link',
-													attrs: { href: '#' },
-													content: 'Главная'
-												},
-											]
-										},
-										{
-											elem: 'item',
-											content: [
-												{
-													tag: 'a',
-													elem: 'link',
-													attrs: { href: '#' },
-													content: 'Новости'
-												},
-											]
-										},
-										{
-											elem: 'item',
-											content: [
-												{
-													tag: 'a',
-													elem: 'link',
-													attrs: { href: '#' },
-													content: '09.12.15'
-												},
-											]
-										},
-										{
-											elem: 'item',
-											content: [
-												{
-													tag: 'a',
-													elem: 'link',
-													attrs: { href: '#' },
-													content: 'Робот-бармен угостит коктейлем на основе психологического портрета в Facebook'
-												},
-											]
-										}
-									]
-								}
-							]
+							url: '#',
+							content: 'Главная'
+						},
+						{
+							url: '#',
+							content: 'Новости'
+						},
+						{
+							url: '#',
+							content: '09.12.15'
+						},
+						{
+							url: '#',
+							content: 'Робот-бармен угостит коктейлем на основе психологического портрета в Facebook'
 						}
 					]
 				},
 				{
-					block: 'page-title',
-					mods: { 'underline': true },
-					content: [
-						{
-							elem: 'layout',
-							mix: { block: 'container' },
-							content: [
-								{
-									elem : 'text',
-									content : 'Новости'
-								}
-							]
-						}
-					]
+					block: 'template-page-title',
+					underline: true,
+					title : 'Новости'
 				},
 				{
 					block: 'news-item',

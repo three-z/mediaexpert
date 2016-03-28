@@ -9,19 +9,14 @@
 					block: 'home-slider',
 					content: [
 						{
-							elem: 'list',
-							content: [
-								{
-									elem: 'item',
-									attrs: { style: 'background-image: url(img/tmp/slider/1.jpg);' },
-									content: ''
-								},
-								{
-									elem: 'item',
-									attrs: { style: 'background-image: url(img/tmp/slider/2.jpg);' },
-									content: ''
-								}
-							]
+							block: 'home-slider-item',
+							attrs: { style: 'background-image: url(img/tmp/slider/1.jpg);' },
+							content: ''
+						},
+						{
+							block: 'home-slider-item',
+							attrs: { style: 'background-image: url(img/tmp/slider/2.jpg);' },
+							content: ''
 						}
 					]
 				},
@@ -40,35 +35,35 @@
 											content: 'Преимущества нашей компании'
 										},
 										{
-											elem: 'list',
+											block: 'home-advantages-list',
 											content: [
 												{
-													elem: 'item',
+													block: 'home-advantages-list-item',
 													mods: { 'exclusive': true },
 													content: 'Эксклюзивное право <br>на размещение рекламы <br>на радио и ТВ <br>'
 												},
 												{
-													elem: 'item',
+													block: 'home-advantages-list-item',
 													mods: { 'reputation': true },
 													content: 'Надежность и отличная <br>репутация <br>'
 												},
 												{
-													elem: 'item',
+													block: 'home-advantages-list-item',
 													mods: { 'service': true },
 													content: 'Высокий уровень клиентского <br>сервиса, постоянное повышение <br>квалификации сотрудников <br>(тренинги, курсы, обмен опытом) <br>'
 												},
 												{
-													elem: 'item',
+													block: 'home-advantages-list-item',
 													mods: { 'price': true },
 													content: 'Гибкая ценовая <br>политика, <br>индивидуальный <br>подход <br>'
 												},
 												{
-													elem: 'item',
+													block: 'home-advantages-list-item',
 													mods: { 'advertising': true },
 													content: 'Планирование рекламных <br>компаний, оптимально <br>соответствующих <br>бюджету Клиента <br>'
 												},
 												{
-													elem: 'item',
+													block: 'home-advantages-list-item',
 													mods: { 'creative': true },
 													content: 'Оригинальный творческий подход <br>к решению рекламных задач <br>Клиента. <br>'
 												},
@@ -83,12 +78,10 @@
 											block: 'home-banner',
 											content: [
 												{
-													elem: 'link',
 													tag: 'a',
 													attrs: { href: '#' },
 													content: [
 														{
-															elem: 'image',
 															tag: 'img',
 															attrs: { src: 'img/tmp/banners/1.jpg' },
 														}
@@ -103,7 +96,7 @@
 					]
 				},
 				{
-					block: 'home-on-tv',
+					block: 'home-tv',
 					content: [
 						{
 							elem: 'layout',
@@ -133,149 +126,138 @@
 									]
 								},
 								{
-									block: 'on-tv-slider',
+									block: 'home-tv-slider',
 									content: [
 										{
-											elem: 'list',
+											block: 'home-tv-slider-item',
 											content: [
 												{
-													elem: 'item',
+													elem: 'thumb',
 													content: [
 														{
-															elem: 'thumb',
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/on-tv/1.png' },
-																}
-															]
-														},
-														{
-															elem: 'title',
-															content: 'реклама на телевидении'
-														},
-														{
-															elem: 'sub-title',
-															content: 'ПЕРВЫЙ'
+															tag: 'img',
+															attrs: { src: 'img/tmp/on-tv/1.png' },
 														}
 													]
 												},
 												{
-													elem: 'item',
+													elem: 'title',
+													content: 'реклама на телевидении'
+												},
+												{
+													elem: 'sub-title',
+													content: 'ПЕРВЫЙ'
+												}
+											]
+										},
+										{
+											block: 'home-tv-slider-item',
+											content: [
+												{
+													elem: 'thumb',
 													content: [
 														{
-															elem: 'thumb',
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/on-tv/2.png' },
-																}
-															]
-														},
-														{
-															elem: 'title',
-															content: 'реклама на телевидении'
-														},
-														{
-															elem: 'sub-title',
-															content: 'РОССИЯ'
+															tag: 'img',
+															attrs: { src: 'img/tmp/on-tv/2.png' },
 														}
 													]
 												},
 												{
-													elem: 'item',
+													elem: 'title',
+													content: 'реклама на телевидении'
+												},
+												{
+													elem: 'sub-title',
+													content: 'РОССИЯ'
+												}
+											]
+										},
+										{
+											block: 'home-tv-slider-item',
+											content: [
+												{
+													elem: 'thumb',
 													content: [
 														{
-															elem: 'thumb',
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/on-tv/1.png' },
-																}
-															]
-														},
-														{
-															elem: 'title',
-															content: 'реклама на телевидении'
-														},
-														{
-															elem: 'sub-title',
-															content: 'ПЕРВЫЙ'
+															tag: 'img',
+															attrs: { src: 'img/tmp/on-tv/1.png' },
 														}
 													]
 												},
 												{
-													elem: 'item',
+													elem: 'title',
+													content: 'реклама на телевидении'
+												},
+												{
+													elem: 'sub-title',
+													content: 'ПЕРВЫЙ'
+												}
+											]
+										},
+										{
+											block: 'home-tv-slider-item',
+											content: [
+												{
+													elem: 'thumb',
 													content: [
 														{
-															elem: 'thumb',
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/on-tv/2.png' },
-																}
-															]
-														},
-														{
-															elem: 'title',
-															content: 'реклама на телевидении'
-														},
-														{
-															elem: 'sub-title',
-															content: 'РОССИЯ'
+															tag: 'img',
+															attrs: { src: 'img/tmp/on-tv/2.png' },
 														}
 													]
 												},
 												{
-													elem: 'item',
+													elem: 'title',
+													content: 'реклама на телевидении'
+												},
+												{
+													elem: 'sub-title',
+													content: 'РОССИЯ'
+												}
+											]
+										},
+										{
+											block: 'home-tv-slider-item',
+											content: [
+												{
+													elem: 'thumb',
 													content: [
 														{
-															elem: 'thumb',
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/on-tv/1.png' },
-																}
-															]
-														},
-														{
-															elem: 'title',
-															content: 'реклама на телевидении'
-														},
-														{
-															elem: 'sub-title',
-															content: 'ПЕРВЫЙ'
+															tag: 'img',
+															attrs: { src: 'img/tmp/on-tv/1.png' },
 														}
 													]
 												},
 												{
-													elem: 'item',
+													elem: 'title',
+													content: 'реклама на телевидении'
+												},
+												{
+													elem: 'sub-title',
+													content: 'ПЕРВЫЙ'
+												}
+											]
+										},
+										{
+											block: 'home-tv-slider-item',
+											content: [
+												{
+													elem: 'thumb',
 													content: [
 														{
-															elem: 'thumb',
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/on-tv/2.png' },
-																}
-															]
-														},
-														{
-															elem: 'title',
-															content: 'реклама на телевидении'
-														},
-														{
-															elem: 'sub-title',
-															content: 'РОССИЯ'
+															tag: 'img',
+															attrs: { src: 'img/tmp/on-tv/2.png' },
 														}
 													]
 												},
+												{
+													elem: 'title',
+													content: 'реклама на телевидении'
+												},
+												{
+													elem: 'sub-title',
+													content: 'РОССИЯ'
+												}
 											]
 										}
 									]
@@ -285,7 +267,7 @@
 					]
 				},
 				{
-					block: 'home-on-radio',
+					block: 'home-radio',
 					content: [
 						{
 							elem: 'layout',
@@ -314,194 +296,181 @@
 									]
 								},
 								{
-									block: 'on-radio-slider',
+									block: 'home-radio-slider',
 									content: [
 										{
-											elem: 'list',
+											block: 'home-radio-slider-item',
 											content: [
 												{
-													elem: 'item',
+													elem: 'thumb',
 													content: [
 														{
-															elem: 'thumb',
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/on-radio/1.png' },
-																}
-															]
-														},
-														{
-															elem: 'title',
-															content: 'реклама на радиостанции'
-														},
-														{
-															elem: 'sub-title',
-															content: 'Европа Плюс'
+															tag: 'img',
+															attrs: { src: 'img/tmp/on-radio/1.png' },
 														}
 													]
 												},
 												{
-													elem: 'item',
+													elem: 'title',
+													content: 'реклама на радиостанции'
+												},
+												{
+													elem: 'sub-title',
+													content: 'Европа Плюс'
+												}
+											]
+										},
+										{
+											block: 'home-radio-slider-item',
+											content: [
+												{
+													elem: 'thumb',
 													content: [
 														{
-															elem: 'thumb',
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/on-radio/2.png' },
-																}
-															]
-														},
-														{
-															elem: 'title',
-															content: 'реклама на радиостанции'
-														},
-														{
-															elem: 'sub-title',
-															content: 'Русское Радио'
+															tag: 'img',
+															attrs: { src: 'img/tmp/on-radio/2.png' },
 														}
 													]
 												},
 												{
-													elem: 'item',
+													elem: 'title',
+													content: 'реклама на радиостанции'
+												},
+												{
+													elem: 'sub-title',
+													content: 'Русское Радио'
+												}
+											]
+										},
+										{
+											block: 'home-radio-slider-item',
+											content: [
+												{
+													elem: 'thumb',
 													content: [
 														{
-															elem: 'thumb',
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/on-radio/1.png' },
-																}
-															]
-														},
-														{
-															elem: 'title',
-															content: 'реклама на радиостанции'
-														},
-														{
-															elem: 'sub-title',
-															content: 'Европа Плюс'
+															tag: 'img',
+															attrs: { src: 'img/tmp/on-radio/1.png' },
 														}
 													]
 												},
 												{
-													elem: 'item',
+													elem: 'title',
+													content: 'реклама на радиостанции'
+												},
+												{
+													elem: 'sub-title',
+													content: 'Европа Плюс'
+												}
+											]
+										},
+										{
+											block: 'home-radio-slider-item',
+											content: [
+												{
+													elem: 'thumb',
 													content: [
 														{
-															elem: 'thumb',
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/on-radio/2.png' },
-																}
-															]
-														},
-														{
-															elem: 'title',
-															content: 'реклама на радиостанции'
-														},
-														{
-															elem: 'sub-title',
-															content: 'Русское Радио'
+															tag: 'img',
+															attrs: { src: 'img/tmp/on-radio/2.png' },
 														}
 													]
 												},
 												{
-													elem: 'item',
+													elem: 'title',
+													content: 'реклама на радиостанции'
+												},
+												{
+													elem: 'sub-title',
+													content: 'Русское Радио'
+												}
+											]
+										},
+										{
+											block: 'home-radio-slider-item',
+											content: [
+												{
+													elem: 'thumb',
 													content: [
 														{
-															elem: 'thumb',
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/on-radio/1.png' },
-																}
-															]
-														},
-														{
-															elem: 'title',
-															content: 'реклама на радиостанции'
-														},
-														{
-															elem: 'sub-title',
-															content: 'Европа Плюс'
+															tag: 'img',
+															attrs: { src: 'img/tmp/on-radio/1.png' },
 														}
 													]
 												},
 												{
-													elem: 'item',
+													elem: 'title',
+													content: 'реклама на радиостанции'
+												},
+												{
+													elem: 'sub-title',
+													content: 'Европа Плюс'
+												}
+											]
+										},
+										{
+											block: 'home-radio-slider-item',
+											content: [
+												{
+													elem: 'thumb',
 													content: [
 														{
-															elem: 'thumb',
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/on-radio/2.png' },
-																}
-															]
-														},
-														{
-															elem: 'title',
-															content: 'реклама на радиостанции'
-														},
-														{
-															elem: 'sub-title',
-															content: 'Русское Радио'
+															tag: 'img',
+															attrs: { src: 'img/tmp/on-radio/2.png' },
 														}
 													]
 												},
 												{
-													elem: 'item',
+													elem: 'title',
+													content: 'реклама на радиостанции'
+												},
+												{
+													elem: 'sub-title',
+													content: 'Русское Радио'
+												}
+											]
+										},
+										{
+											block: 'home-radio-slider-item',
+											content: [
+												{
+													elem: 'thumb',
 													content: [
 														{
-															elem: 'thumb',
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/on-radio/1.png' },
-																}
-															]
-														},
-														{
-															elem: 'title',
-															content: 'реклама на радиостанции'
-														},
-														{
-															elem: 'sub-title',
-															content: 'Европа Плюс'
+															tag: 'img',
+															attrs: { src: 'img/tmp/on-radio/1.png' },
 														}
 													]
 												},
 												{
-													elem: 'item',
+													elem: 'title',
+													content: 'реклама на радиостанции'
+												},
+												{
+													elem: 'sub-title',
+													content: 'Европа Плюс'
+												}
+											]
+										},
+										{
+											block: 'home-radio-slider-item',
+											content: [
+												{
+													elem: 'thumb',
 													content: [
 														{
-															elem: 'thumb',
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/on-radio/2.png' },
-																}
-															]
-														},
-														{
-															elem: 'title',
-															content: 'реклама на радиостанции'
-														},
-														{
-															elem: 'sub-title',
-															content: 'Русское Радио'
+															tag: 'img',
+															attrs: { src: 'img/tmp/on-radio/2.png' },
 														}
 													]
+												},
+												{
+													elem: 'title',
+													content: 'реклама на радиостанции'
+												},
+												{
+													elem: 'sub-title',
+													content: 'Русское Радио'
 												}
 											]
 										}
@@ -512,171 +481,163 @@
 					]
 				},
 				{
-					block: 'last-news',
+					block: 'home-news',
 					content: [
 						{
 							elem: 'layout',
 							mix: { block: 'container' },
 							content: [
 								{
-									elem: 'title',
-									cls: 'js-gradient',
-									content: 'Новости'
+									block: 'template-page-title',
+									title : 'Новости',
+									underline: true
 								},
 								{
-									block: 'last-news-slider',
+									block: 'home-news-slider',
 									content: [
 										{
-											elem: 'list',
+											block: 'home-news-slider-item',
 											content: [
 												{
-													elem: 'item',
+													elem: 'thumb',
 													content: [
 														{
-															elem: 'thumb',
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/last-news/1.png' },
-																}
-															]
-														},
-														{
-															elem: 'info',
-															content: [
-																{
-																	elem: 'title',
-																	cls: 'js-dotted',
-																	content: [
-																		{
-																			tag: 'a',
-																			attrs: { href: '#' },
-																			content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-																		}
-																	]
-																},
-																{
-																	elem: 'date',
-																	content: '10.12.15'
-																},
-																{
-																	elem: 'text',
-																	cls: 'js-dotted',
-																	content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-																},
-																{
-																	elem: 'more',
-																	content: [
-																		{
-																			tag: 'a',
-																			elem: 'more-link',
-																			attrs: { href: '#' },
-																			content: 'подробнее'
-																		}
-																	]
-																}
-															]
+															tag: 'img',
+															attrs: { src: 'img/tmp/last-news/1.png' },
 														}
 													]
 												},
 												{
-													elem: 'item',
+													elem: 'info',
 													content: [
 														{
-															elem: 'thumb',
+															elem: 'title',
+															cls: 'js-dotted',
 															content: [
 																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/last-news/1.png' },
+																	tag: 'a',
+																	attrs: { href: '#' },
+																	content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
 																}
 															]
 														},
 														{
-															elem: 'info',
+															elem: 'date',
+															content: '10.12.15'
+														},
+														{
+															elem: 'text',
+															cls: 'js-dotted',
+															content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
+														},
+														{
+															elem: 'more',
 															content: [
 																{
-																	elem: 'title',
-																	cls: 'js-dotted',
-																	content: [
-																		{
-																			tag: 'a',
-																			attrs: { href: '#' },
-																			content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-																		}
-																	]
-																},
-																{
-																	elem: 'date',
-																	content: '10.12.15'
-																},
-																{
-																	elem: 'text',
-																	cls: 'js-dotted',
-																	content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-																},
-																{
-																	elem: 'more',
-																	content: [
-																		{
-																			tag: 'a',
-																			elem: 'more-link',
-																			attrs: { href: '#' },
-																			content: 'подробнее'
-																		}
-																	]
+																	block: 'more-button',
+																	tag: 'a',
+																	attrs: { href: '#' },
+																	content: 'подробнее'
 																}
 															]
 														}
 													]
-												},
+												}
+											]
+										},
+										{
+											block: 'home-news-slider-item',
+											content: [
 												{
-													elem: 'item',
+													elem: 'thumb',
 													content: [
 														{
-															elem: 'thumb',
+															tag: 'img',
+															attrs: { src: 'img/tmp/last-news/1.png' },
+														}
+													]
+												},
+												{
+													elem: 'info',
+													content: [
+														{
+															elem: 'title',
+															cls: 'js-dotted',
 															content: [
 																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/last-news/1.png' },
+																	tag: 'a',
+																	attrs: { href: '#' },
+																	content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
 																}
 															]
 														},
 														{
-															elem: 'info',
+															elem: 'date',
+															content: '10.12.15'
+														},
+														{
+															elem: 'text',
+															cls: 'js-dotted',
+															content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
+														},
+														{
+															elem: 'more',
 															content: [
 																{
-																	elem: 'title',
-																	cls: 'js-dotted',
-																	content: [
-																		{
-																			tag: 'a',
-																			attrs: { href: '#' },
-																			content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-																		}
-																	]
-																},
+																	block: 'more-button',
+																	tag: 'a',
+																	attrs: { href: '#' },
+																	content: 'подробнее'
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											block: 'home-news-slider-item',
+											content: [
+												{
+													elem: 'thumb',
+													content: [
+														{
+															tag: 'img',
+															attrs: { src: 'img/tmp/last-news/1.png' },
+														}
+													]
+												},
+												{
+													elem: 'info',
+													content: [
+														{
+															elem: 'title',
+															cls: 'js-dotted',
+															content: [
 																{
-																	elem: 'date',
-																	content: '10.12.15'
-																},
-																{
-																	elem: 'text',
-																	cls: 'js-dotted',
+																	tag: 'a',
+																	attrs: { href: '#' },
 																	content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-																},
+																}
+															]
+														},
+														{
+															elem: 'date',
+															content: '10.12.15'
+														},
+														{
+															elem: 'text',
+															cls: 'js-dotted',
+															content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
+														},
+														{
+															elem: 'more',
+															content: [
 																{
-																	elem: 'more',
-																	content: [
-																		{
-																			tag: 'a',
-																			elem: 'more-link',
-																			attrs: { href: '#' },
-																			content: 'подробнее'
-																		}
-																	]
+																	block: 'more-button',
+																	tag: 'a',
+																	attrs: { href: '#' },
+																	content: 'подробнее'
 																}
 															]
 														}
@@ -702,200 +663,7 @@
 					]
 				},
 				{
-					block: 'clients',
-					content: [
-						{
-							elem: 'layout',
-							mix: { block: 'container' },
-							content: [
-								{
-									elem: 'title',
-									cls: 'js-gradient',
-									content: 'Наши клиенты'
-								},
-								{
-									block: 'clients-slider',
-									content: [
-										{
-											elem: 'list',
-											content: [
-												{
-													elem: 'item',
-													content: [
-														{
-															tag: 'a',
-															elem: 'link',
-															attrs: { href: '#' },
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/clients/1.png' },
-																}
-															]
-														}
-													]
-												},
-												{
-													elem: 'item',
-													content: [
-														{
-															tag: 'a',
-															elem: 'link',
-															attrs: { href: '#' },
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/clients/2.png' },
-																}
-															]
-														}
-													]
-												},
-												{
-													elem: 'item',
-													content: [
-														{
-															tag: 'a',
-															elem: 'link',
-															attrs: { href: '#' },
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/clients/1.png' },
-																}
-															]
-														}
-													]
-												},
-												{
-													elem: 'item',
-													content: [
-														{
-															tag: 'a',
-															elem: 'link',
-															attrs: { href: '#' },
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/clients/2.png' },
-																}
-															]
-														}
-													]
-												},
-												{
-													elem: 'item',
-													content: [
-														{
-															tag: 'a',
-															elem: 'link',
-															attrs: { href: '#' },
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/clients/1.png' },
-																}
-															]
-														}
-													]
-												},
-												{
-													elem: 'item',
-													content: [
-														{
-															tag: 'a',
-															elem: 'link',
-															attrs: { href: '#' },
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/clients/2.png' },
-																}
-															]
-														}
-													]
-												},
-												{
-													elem: 'item',
-													content: [
-														{
-															tag: 'a',
-															elem: 'link',
-															attrs: { href: '#' },
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/clients/1.png' },
-																}
-															]
-														}
-													]
-												},
-												{
-													elem: 'item',
-													content: [
-														{
-															tag: 'a',
-															elem: 'link',
-															attrs: { href: '#' },
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/clients/2.png' },
-																}
-															]
-														}
-													]
-												},
-												{
-													elem: 'item',
-													content: [
-														{
-															tag: 'a',
-															elem: 'link',
-															attrs: { href: '#' },
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/clients/1.png' },
-																}
-															]
-														}
-													]
-												},
-												{
-													elem: 'item',
-													content: [
-														{
-															tag: 'a',
-															elem: 'link',
-															attrs: { href: '#' },
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/clients/2.png' },
-																}
-															]
-														}
-													]
-												}
-											]
-										}
-									]
-								}
-							]
-						}
-					]
+					block: 'template-clients'
 				}
 			]
 		}

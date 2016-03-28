@@ -6,79 +6,25 @@
 			block: 'content',
 			content: [
 				{
-					block: 'breadcrumbs',
-					content: [
+					block : 'template-breadcrumbs',
+					links: [
 						{
-							elem: 'layout',
-							mix: { block: 'container' },
-							content: [
-								{
-									elem: 'list',
-									content: [
-										{
-											elem: 'item',
-											content: [
-												{
-													tag: 'a',
-													elem: 'link',
-													attrs: { href: '#' },
-													content: 'Главная'
-												},
-											]
-										},
-										{
-											elem: 'item',
-											content: [
-												{
-													tag: 'a',
-													elem: 'link',
-													attrs: { href: '#' },
-													content: 'Компания'
-												},
-											]
-										},
-										{
-											elem: 'item',
-											content: [
-												{
-													tag: 'a',
-													elem: 'link',
-													attrs: { href: '#' },
-													content: 'Вакансии'
-												},
-											]
-										},
-										{
-											elem: 'item',
-											content: [
-												{
-													tag: 'a',
-													elem: 'link',
-													attrs: { href: '#' },
-													content: 'Офис-менеджер'
-												},
-											]
-										}
-									]
-								}
-							]
+							url: '#',
+							content: 'Главная'
+						},
+						{
+							url: '#',
+							content: 'Компания'
+						},
+						{
+							url: '#',
+							content: 'Вакансии'
 						}
 					]
 				},
 				{
-					block: 'page-title',
-					content: [
-						{
-							elem: 'layout',
-							mix: { block: 'container' },
-							content: [
-								{
-									elem : 'text',
-									content : 'Вакансии'
-								}
-							]
-						}
-					]
+					block: 'template-page-title',
+					title : 'Вакансии'
 				},
 				{
 					block: 'vacancies-item',

@@ -6,69 +6,26 @@
 			block: 'content',
 			content: [
 				{
-					block: 'breadcrumbs',
-					content: [
+					block : 'template-breadcrumbs',
+					links: [
 						{
-							elem: 'layout',
-							mix: { block: 'container' },
-							content: [
-								{
-									elem: 'list',
-									content: [
-										{
-											elem: 'item',
-											content: [
-												{
-													tag: 'a',
-													elem: 'link',
-													attrs: { href: '#' },
-													content: 'Главная'
-												},
-											]
-										},
-										{
-											elem: 'item',
-											content: [
-												{
-													tag: 'a',
-													elem: 'link',
-													attrs: { href: '#' },
-													content: 'Компания'
-												},
-											]
-										},
-										{
-											elem: 'item',
-											content: [
-												{
-													tag: 'a',
-													elem: 'link',
-													attrs: { href: '#' },
-													content: 'Наши партнеры'
-												},
-											]
-										}
-									]
-								}
-							]
+							url: '#',
+							content: 'Главная'
+						},
+						{
+							url: '#',
+							content: 'Компания'
+						},
+						{
+							url: '#',
+							content: 'Наши партнеры'
 						}
 					]
 				},
 				{
-					block: 'page-title',
-					mods: { 'underline': true },
-					content: [
-						{
-							elem: 'layout',
-							mix: { block: 'container' },
-							content: [
-								{
-									elem : 'text',
-									content : 'Наши партнеры'
-								}
-							]
-						}
-					]
+					block: 'template-page-title',
+					underline: true,
+					title : 'Наши партнеры'
 				},
 				{
 					block: 'partners',

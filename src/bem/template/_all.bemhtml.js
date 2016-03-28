@@ -63,6 +63,7 @@ block('template-page-title').replace()(function() {
 						{
 							elem : 'text',
 							tag: 'h2',
+							cls: 'js-gradient',
 							content : ctx.title
 						}
 					]
@@ -153,18 +154,499 @@ block('template-breadcrumbs').replace()(function() {
 	];
 });
 
+block('template-last-reclam').replace()(function() {
+	var ctx = this.ctx;
+
+	return [
+		{
+			block: 'last-reclam',
+			content: [
+				{
+					elem: 'layout',
+					mix: { block: 'container' },
+					content: [
+						{
+							elem: 'title',
+							content: 'Рекламные ролики'
+						},
+						{
+							block: 'last-reclam-slider',
+							content: [
+								{
+									block: 'last-reclam-slider-item',
+									content: [
+										{
+											elem: 'link',
+											tag: 'a',
+											attrs: { href: '#' },
+											content: [
+												{
+													tag: 'img',
+													attrs: { src: 'img/tmp/video/1.jpg' },
+												}
+											]
+										}
+									]
+								},
+								{
+									block: 'last-reclam-slider-item',
+									content: [
+										{
+											elem: 'link',
+											tag: 'a',
+											attrs: { href: '#' },
+											content: [
+												{
+													tag: 'img',
+													attrs: { src: 'img/tmp/video/2.jpg' },
+												}
+											]
+										}
+									]
+								},
+								{
+									block: 'last-reclam-slider-item',
+									content: [
+										{
+											elem: 'link',
+											tag: 'a',
+											attrs: { href: '#' },
+											content: [
+												{
+													tag: 'img',
+													attrs: { src: 'img/tmp/video/1.jpg' },
+												}
+											]
+										}
+									]
+								},
+								{
+									block: 'last-reclam-slider-item',
+									content: [
+										{
+											elem: 'link',
+											tag: 'a',
+											attrs: { href: '#' },
+											content: [
+												{
+													tag: 'img',
+													attrs: { src: 'img/tmp/video/2.jpg' },
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							elem: 'other',
+							content: [
+								{
+									tag: 'a',
+									attrs: { href: '#' },
+									content: 'Все рекламные ролики'
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	];
+});
+
+block('template-last-news').replace()(function() {
+	var ctx = this.ctx;
+
+	return [
+		{
+			block: 'template-page-title',
+			title : 'Новости',
+			underline: true
+		},
+		{
+			block: 'last-news',
+			content: [
+				{
+					elem: 'layout',
+					mix: { block: 'container' },
+					content: [
+						{
+							block: 'news-list',
+							content: [
+								{
+									block: 'news-list-item',
+									content: [
+										{
+											elem: 'thumb',
+											content: [
+												{
+													tag: 'img',
+													attrs: { src: 'img/tmp/last-news/1.png' },
+												}
+											]
+										},
+										{
+											elem: 'info',
+											content: [
+												{
+													elem: 'title',
+													cls: 'js-dotted',
+													content: [
+														{
+															tag: 'a',
+															attrs: { href: '#' },
+															content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
+														}
+													]
+												},
+												{
+													elem: 'date',
+													content: '10.12.15'
+												},
+												{
+													elem: 'text',
+													cls: 'js-dotted',
+													content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
+												},
+												{
+													elem: 'more',
+													content: [
+														{
+															block: 'more-button',
+															tag: 'a',
+															attrs: { href: '#' },
+															content: 'подробнее'
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									block: 'news-list-item',
+									content: [
+										{
+											elem: 'thumb',
+											content: [
+												{
+													tag: 'img',
+													attrs: { src: 'img/tmp/last-news/1.png' },
+												}
+											]
+										},
+										{
+											elem: 'info',
+											content: [
+												{
+													elem: 'title',
+													cls: 'js-dotted',
+													content: [
+														{
+															tag: 'a',
+															attrs: { href: '#' },
+															content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
+														}
+													]
+												},
+												{
+													elem: 'date',
+													content: '10.12.15'
+												},
+												{
+													elem: 'text',
+													cls: 'js-dotted',
+													content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
+												},
+												{
+													elem: 'more',
+													content: [
+														{
+															block: 'more-button',
+															tag: 'a',
+															attrs: { href: '#' },
+															content: 'подробнее'
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									block: 'news-list-item',
+									content: [
+										{
+											elem: 'thumb',
+											content: [
+												{
+													elem: 'image',
+													tag: 'img',
+													attrs: { src: 'img/tmp/last-news/1.png' },
+												}
+											]
+										},
+										{
+											elem: 'info',
+											content: [
+												{
+													elem: 'title',
+													cls: 'js-dotted',
+													content: [
+														{
+															tag: 'a',
+															attrs: { href: '#' },
+															content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
+														}
+													]
+												},
+												{
+													elem: 'date',
+													content: '10.12.15'
+												},
+												{
+													elem: 'text',
+													cls: 'js-dotted',
+													content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
+												},
+												{
+													elem: 'more',
+													content: [
+														{
+															block: 'more-button',
+															tag: 'a',
+															attrs: { href: '#' },
+															content: 'подробнее'
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									block: 'news-list-item',
+									content: [
+										{
+											elem: 'thumb',
+											content: [
+												{
+													elem: 'image',
+													tag: 'img',
+													attrs: { src: 'img/tmp/last-news/1.png' },
+												}
+											]
+										},
+										{
+											elem: 'info',
+											content: [
+												{
+													elem: 'title',
+													cls: 'js-dotted',
+													content: [
+														{
+															tag: 'a',
+															attrs: { href: '#' },
+															content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
+														}
+													]
+												},
+												{
+													elem: 'date',
+													content: '10.12.15'
+												},
+												{
+													elem: 'text',
+													cls: 'js-dotted',
+													content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
+												},
+												{
+													elem: 'more',
+													content: [
+														{
+															block: 'more-button',
+															tag: 'a',
+															attrs: { href: '#' },
+															content: 'подробнее'
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							elem: 'other',
+							content: [
+								{
+									tag: 'a',
+									attrs: { href: '#' },
+									content: 'Другие новости'
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	];
+});
+
+block('template-clients').replace()(function() {
+	var ctx = this.ctx;
+
+	return [
+		{
+			block: 'template-page-title',
+			title : 'Наши клиенты',
+			underline: true
+		},
+		{
+			block: 'clients',
+			content: [
+				{
+					elem: 'layout',
+					mix: { block: 'container' },
+					content: [
+						{
+							block: 'clients-slider',
+							content: [
+								{
+									block: 'clients-slider-item',
+									content: [
+										{
+											tag: 'a',
+											attrs: { href: '#' },
+											content: [
+												{
+													tag: 'img',
+													attrs: { src: 'img/tmp/clients/1.png' },
+												}
+											]
+										}
+									]
+								},
+								{
+									block: 'clients-slider-item',
+									content: [
+										{
+											tag: 'a',
+											attrs: { href: '#' },
+											content: [
+												{
+													tag: 'img',
+													attrs: { src: 'img/tmp/clients/2.png' },
+												}
+											]
+										}
+									]
+								},
+								{
+									block: 'clients-slider-item',
+									content: [
+										{
+											tag: 'a',
+											attrs: { href: '#' },
+											content: [
+												{
+													tag: 'img',
+													attrs: { src: 'img/tmp/clients/1.png' },
+												}
+											]
+										}
+									]
+								},
+								{
+									block: 'clients-slider-item',
+									content: [
+										{
+											tag: 'a',
+											attrs: { href: '#' },
+											content: [
+												{
+													tag: 'img',
+													attrs: { src: 'img/tmp/clients/2.png' },
+												}
+											]
+										}
+									]
+								},
+								{
+									block: 'clients-slider-item',
+									content: [
+										{
+											tag: 'a',
+											attrs: { href: '#' },
+											content: [
+												{
+													tag: 'img',
+													attrs: { src: 'img/tmp/clients/1.png' },
+												}
+											]
+										}
+									]
+								},
+								{
+									block: 'clients-slider-item',
+									content: [
+										{
+											tag: 'a',
+											attrs: { href: '#' },
+											content: [
+												{
+													tag: 'img',
+													attrs: { src: 'img/tmp/clients/2.png' },
+												}
+											]
+										}
+									]
+								},
+								{
+									block: 'clients-slider-item',
+									content: [
+										{
+											tag: 'a',
+											attrs: { href: '#' },
+											content: [
+												{
+													tag: 'img',
+													attrs: { src: 'img/tmp/clients/1.png' },
+												}
+											]
+										}
+									]
+								},
+								{
+									block: 'clients-slider-item',
+									content: [
+										{
+											tag: 'a',
+											attrs: { href: '#' },
+											content: [
+												{
+													tag: 'img',
+													attrs: { src: 'img/tmp/clients/2.png' },
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	];
+});
+
 // header
 
 block('site-title')(
     tag()('h1')
-);
-
-block('social-links').elem('list')(
-    tag()('ul')
-);
-
-block('social-links').elem('item')(
-    tag()('li')
 );
 
 // navigation

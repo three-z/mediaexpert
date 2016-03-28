@@ -6,69 +6,26 @@
 			block: 'content',
 			content: [
 				{
-					block: 'breadcrumbs',
-					content: [
+					block : 'template-breadcrumbs',
+					links: [
 						{
-							elem: 'layout',
-							mix: { block: 'container' },
-							content: [
-								{
-									elem: 'list',
-									content: [
-										{
-											elem: 'item',
-											content: [
-												{
-													tag: 'a',
-													elem: 'link',
-													attrs: { href: '#' },
-													content: 'Главная'
-												},
-											]
-										},
-										{
-											elem: 'item',
-											content: [
-												{
-													tag: 'a',
-													elem: 'link',
-													attrs: { href: '#' },
-													content: 'Компания'
-												},
-											]
-										},
-										{
-											elem: 'item',
-											content: [
-												{
-													tag: 'a',
-													elem: 'link',
-													attrs: { href: '#' },
-													content: 'Вакансии'
-												},
-											]
-										}
-									]
-								}
-							]
+							url: '#',
+							content: 'Главная'
+						},
+						{
+							url: '#',
+							content: 'Компания'
+						},
+						{
+							url: '#',
+							content: 'Вакансии'
 						}
 					]
 				},
 				{
-					block: 'page-title',
-					mods: { 'underline': true },
-					content: [
-						{
-							elem: 'layout',
-							mix: { block: 'container' },
-							content: [
-								{
-									elem : 'text',
-									content : 'Вакансии'
-								}
-							]
-						}
-					]
+					block: 'template-page-title',
+					title : 'Вакансии',
+					underline: true
 				},
 				{
 					block: 'vacancies',

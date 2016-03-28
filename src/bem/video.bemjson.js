@@ -1,58 +1,31 @@
 ({
 	block: 'template-page',
-	title: 'Оформить заявку',
+	title: 'Рекламные ролики',
 	content: [
 		{
 			block: 'content',
 			content: [
 				{
-					block: 'breadcrumbs',
-					content: [
+					block : 'template-breadcrumbs',
+					links: [
 						{
-							elem: 'layout',
-							mix: { block: 'container' },
-							content: [
-								{
-									elem: 'list',
-									content: [
-										{
-											elem: 'item',
-											content: [
-												{
-													tag: 'a',
-													elem: 'link',
-													attrs: { href: '#' },
-													content: 'Главная'
-												},
-											]
-										},
-										{
-											elem: 'item',
-											content: [
-												{
-													tag: 'a',
-													elem: 'link',
-													attrs: { href: '#' },
-													content: 'Реклама на телевидении'
-												},
-											]
-										},
-										{
-											elem: 'item',
-											content: [
-												{
-													tag: 'a',
-													elem: 'link',
-													attrs: { href: '#' },
-													content: 'Рекламные ролики'
-												},
-											]
-										}
-									]
-								}
-							]
+							url: '#',
+							content: 'Главная'
+						},
+						{
+							url: '#',
+							content: 'Реклама на телевидении'
+						},
+						{
+							url: '#',
+							content: 'Рекламные ролик'
 						}
 					]
+				},
+				{
+					block: 'template-page-title',
+					title : 'Оформить заявку',
+					underline: true
 				},
 				{
 					block: 'video',
@@ -62,131 +35,75 @@
 							mix: { block: 'container' },
 							content: [
 								{
-									elem: 'title',
-									cls: 'js-gradient',
-									content: 'Оформить заявку'
+									block: 'template-request-form',
 								},
 								{
-									elem: 'content',
+									block: 'video-list',
 									content: [
 										{
-											block: 'request-form',
+											block: 'video-list-item',
 											content: [
 												{
-													tag: 'form',
-													elem: 'form',
-													content: [
-														{
-															tag: 'input',
-															elem: 'input',
-															attrs: { type: 'text', placeholder: 'Ваше имя' }
-														},
-														{
-															tag: 'input',
-															elem: 'input',
-															attrs: { type: 'text', placeholder: 'Компания' }
-														},
-														{
-															tag: 'input',
-															elem: 'input',
-															mods: { 'small': true },
-															attrs: { type: 'text', placeholder: 'Телефон' }
-														},
-														{
-															tag: 'input',
-															elem: 'input',
-															mods: { 'small': true },
-															attrs: { type: 'text', placeholder: 'E-mail' }
-														},
-														{
-															tag: 'input',
-															elem: 'button',
-															attrs: { type: 'submit', placeholder: 'Отправить' }
-														}
-													]
+													tag: 'img',
+													attrs: { src: 'img/tmp/video/1.jpg' },
 												}
 											]
 										},
 										{
-											block: 'video-list',
+											block: 'video-list-item',
 											content: [
 												{
-													elem: 'list',
-													content: [
-														{
-															elem: 'item',
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/video/1.jpg' },
-																}
-															]
-														},
-														{
-															elem: 'item',
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/video/2.jpg' },
-																}
-															]
-														},
-														{
-															elem: 'item',
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/video/1.jpg' },
-																}
-															]
-														},
-														{
-															elem: 'item',
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/video/2.jpg' },
-																}
-															]
-														},
-														{
-															elem: 'item',
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/video/1.jpg' },
-																}
-															]
-														},
-														{
-															elem: 'item',
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/video/2.jpg' },
-																}
-															]
-														}
-													]
+													tag: 'img',
+													attrs: { src: 'img/tmp/video/2.jpg' },
 												}
 											]
 										},
 										{
-											elem: 'back',
+											block: 'video-list-item',
 											content: [
 												{
-													tag: 'a',
-													elem: 'back-link',
-													attrs: { href: '#' },
-													content: '← назад'
+													tag: 'img',
+													attrs: { src: 'img/tmp/video/1.jpg' },
 												}
 											]
+										},
+										{
+											block: 'video-list-item',
+											content: [
+												{
+													tag: 'img',
+													attrs: { src: 'img/tmp/video/2.jpg' },
+												}
+											]
+										},
+										{
+											block: 'video-list-item',
+											content: [
+												{
+													tag: 'img',
+													attrs: { src: 'img/tmp/video/1.jpg' },
+												}
+											]
+										},
+										{
+											block: 'video-list-item',
+											content: [
+												{
+													tag: 'img',
+													attrs: { src: 'img/tmp/video/2.jpg' },
+												}
+											]
+										}
+									]
+								},
+								{
+									elem: 'back',
+									content: [
+										{
+											block: 'back-button',
+											tag: 'a',
+											attrs: { href: '#' },
+											content: '← назад'
 										}
 									]
 								}

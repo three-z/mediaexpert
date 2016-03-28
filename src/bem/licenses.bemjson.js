@@ -6,69 +6,26 @@
 			block: 'content',
 			content: [
 				{
-					block: 'breadcrumbs',
-					content: [
+					block : 'template-breadcrumbs',
+					links: [
 						{
-							elem: 'layout',
-							mix: { block: 'container' },
-							content: [
-								{
-									elem: 'list',
-									content: [
-										{
-											elem: 'item',
-											content: [
-												{
-													tag: 'a',
-													elem: 'link',
-													attrs: { href: '#' },
-													content: 'Главная'
-												},
-											]
-										},
-										{
-											elem: 'item',
-											content: [
-												{
-													tag: 'a',
-													elem: 'link',
-													attrs: { href: '#' },
-													content: 'Компания'
-												},
-											]
-										},
-										{
-											elem: 'item',
-											content: [
-												{
-													tag: 'a',
-													elem: 'link',
-													attrs: { href: '#' },
-													content: 'Лицензии на размещение рекламы на телевидении'
-												},
-											]
-										}
-									]
-								}
-							]
+							url: '#',
+							content: 'Главная'
+						},
+						{
+							url: '#',
+							content: 'Компания'
+						},
+						{
+							url: '#',
+							content: 'Лицензии на размещение рекламы на телевидении'
 						}
 					]
 				},
 				{
-					block: 'page-title',
-					mods: { 'underline': true },
-					content: [
-						{
-							elem: 'layout',
-							mix: { block: 'container' },
-							content: [
-								{
-									elem : 'text',
-									content : 'Лицензии на размещение рекламы на телевидении'
-								}
-							]
-						}
-					]
+					block: 'template-page-title',
+					underline: true,
+					title : 'Лицензии на размещение рекламы на телевидении'
 				},
 				{
 					block: 'licenses',
