@@ -6,466 +6,434 @@
 			block: 'content',
 			content: [
 				{
-					block: 'breadcrumbs',
-					content: [
+					block : 'template-breadcrumbs',
+					links: [
 						{
-							elem: 'layout',
-							mods: { 'container': true },
-							mix: { block: 'container' },
-							content: [
-								{
-									elem: 'list',
-									content: [
-										{
-											elem: 'item',
-											content: [
-												{
-													tag: 'a',
-													elem: 'link',
-													attrs: { href: '#' },
-													content: 'Главная'
-												},
-											]
-										},
-										{
-											elem: 'item',
-											content: [
-												{
-													tag: 'a',
-													elem: 'link',
-													attrs: { href: '#' },
-													content: 'Новости'
-												},
-											]
-										}
-									]
-								}
-							]
+							url: '#',
+							content: 'Главная'
+						},
+						{
+							url: '#',
+							content: 'Новости'
 						}
 					]
+				},
+				{
+					block: 'template-page-title',
+					title : 'Новости',
+					underline: true
 				},
 				{
 					block: 'news',
 					content: [
 						{
 							elem: 'layout',
-							mods: { 'container': true },
 							mix: { block: 'container' },
 							content: [
-								{
-									elem: 'title',
-									cls: 'js-gradient',
-									content: 'Новости'
-								},
 								{
 									block: 'news-list',
 									content: [
 										{
-											elem: 'list',
+											block: 'news-list-item',
 											content: [
 												{
-													elem: 'item',
+													elem: 'thumb',
 													content: [
 														{
-															elem: 'thumb',
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/last-news/1.png' },
-																}
-															]
-														},
-														{
-															elem: 'info',
-															content: [
-																{
-																	elem: 'title',
-																	cls: 'js-dotted',
-																	content: [
-																		{
-																			tag: 'a',
-																			attrs: { href: '#' },
-																			content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-																		}
-																	]
-																},
-																{
-																	elem: 'date',
-																	content: '10.12.15'
-																},
-																{
-																	elem: 'text',
-																	cls: 'js-dotted',
-																	content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-																},
-																{
-																	elem: 'more',
-																	content: [
-																		{
-																			tag: 'a',
-																			elem: 'more-link',
-																			attrs: { href: '#' },
-																			content: 'подробнее'
-																		}
-																	]
-																}
-															]
+															elem: 'image',
+															tag: 'img',
+															attrs: { src: 'img/tmp/last-news/1.png' },
 														}
 													]
 												},
 												{
-													elem: 'item',
+													elem: 'info',
 													content: [
 														{
-															elem: 'thumb',
+															elem: 'title',
+															cls: 'js-dotted',
 															content: [
 																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/last-news/1.png' },
+																	tag: 'a',
+																	attrs: { href: '#' },
+																	content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
 																}
 															]
 														},
 														{
-															elem: 'info',
+															elem: 'date',
+															content: '10.12.15'
+														},
+														{
+															elem: 'text',
+															cls: 'js-dotted',
+															content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
+														},
+														{
+															elem: 'more',
 															content: [
 																{
-																	elem: 'title',
-																	cls: 'js-dotted',
-																	content: [
-																		{
-																			tag: 'a',
-																			attrs: { href: '#' },
-																			content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-																		}
-																	]
-																},
-																{
-																	elem: 'date',
-																	content: '10.12.15'
-																},
-																{
-																	elem: 'text',
-																	cls: 'js-dotted',
-																	content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-																},
-																{
-																	elem: 'more',
-																	content: [
-																		{
-																			tag: 'a',
-																			elem: 'more-link',
-																			attrs: { href: '#' },
-																			content: 'подробнее'
-																		}
-																	]
+																	block: 'more-button',
+																	tag: 'a',
+																	attrs: { href: '#' },
+																	content: 'подробнее'
 																}
 															]
 														}
 													]
-												},
+												}
+											]
+										},
+										{
+											block: 'news-list-item',
+											content: [
 												{
-													elem: 'item',
+													elem: 'thumb',
 													content: [
 														{
-															elem: 'thumb',
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/last-news/1.png' },
-																}
-															]
-														},
-														{
-															elem: 'info',
-															content: [
-																{
-																	elem: 'title',
-																	cls: 'js-dotted',
-																	content: [
-																		{
-																			tag: 'a',
-																			attrs: { href: '#' },
-																			content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-																		}
-																	]
-																},
-																{
-																	elem: 'date',
-																	content: '10.12.15'
-																},
-																{
-																	elem: 'text',
-																	cls: 'js-dotted',
-																	content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-																},
-																{
-																	elem: 'more',
-																	content: [
-																		{
-																			tag: 'a',
-																			elem: 'more-link',
-																			attrs: { href: '#' },
-																			content: 'подробнее'
-																		}
-																	]
-																}
-															]
+															elem: 'image',
+															tag: 'img',
+															attrs: { src: 'img/tmp/last-news/1.png' },
 														}
 													]
 												},
 												{
-													elem: 'item',
+													elem: 'info',
 													content: [
 														{
-															elem: 'thumb',
+															elem: 'title',
+															cls: 'js-dotted',
 															content: [
 																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/last-news/1.png' },
+																	tag: 'a',
+																	attrs: { href: '#' },
+																	content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
 																}
 															]
 														},
 														{
-															elem: 'info',
+															elem: 'date',
+															content: '10.12.15'
+														},
+														{
+															elem: 'text',
+															cls: 'js-dotted',
+															content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
+														},
+														{
+															elem: 'more',
 															content: [
 																{
-																	elem: 'title',
-																	cls: 'js-dotted',
-																	content: [
-																		{
-																			tag: 'a',
-																			attrs: { href: '#' },
-																			content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-																		}
-																	]
-																},
-																{
-																	elem: 'date',
-																	content: '10.12.15'
-																},
-																{
-																	elem: 'text',
-																	cls: 'js-dotted',
-																	content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-																},
-																{
-																	elem: 'more',
-																	content: [
-																		{
-																			tag: 'a',
-																			elem: 'more-link',
-																			attrs: { href: '#' },
-																			content: 'подробнее'
-																		}
-																	]
+																	block: 'more-button',
+																	tag: 'a',
+																	attrs: { href: '#' },
+																	content: 'подробнее'
 																}
 															]
 														}
 													]
-												},
+												}
+											]
+										},
+										{
+											block: 'news-list-item',
+											content: [
 												{
-													elem: 'item',
+													elem: 'thumb',
 													content: [
 														{
-															elem: 'thumb',
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/last-news/1.png' },
-																}
-															]
-														},
-														{
-															elem: 'info',
-															content: [
-																{
-																	elem: 'title',
-																	cls: 'js-dotted',
-																	content: [
-																		{
-																			tag: 'a',
-																			attrs: { href: '#' },
-																			content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-																		}
-																	]
-																},
-																{
-																	elem: 'date',
-																	content: '10.12.15'
-																},
-																{
-																	elem: 'text',
-																	cls: 'js-dotted',
-																	content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-																},
-																{
-																	elem: 'more',
-																	content: [
-																		{
-																			tag: 'a',
-																			elem: 'more-link',
-																			attrs: { href: '#' },
-																			content: 'подробнее'
-																		}
-																	]
-																}
-															]
+															elem: 'image',
+															tag: 'img',
+															attrs: { src: 'img/tmp/last-news/1.png' },
 														}
 													]
 												},
 												{
-													elem: 'item',
+													elem: 'info',
 													content: [
 														{
-															elem: 'thumb',
+															elem: 'title',
+															cls: 'js-dotted',
 															content: [
 																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/last-news/1.png' },
+																	tag: 'a',
+																	attrs: { href: '#' },
+																	content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
 																}
 															]
 														},
 														{
-															elem: 'info',
+															elem: 'date',
+															content: '10.12.15'
+														},
+														{
+															elem: 'text',
+															cls: 'js-dotted',
+															content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
+														},
+														{
+															elem: 'more',
 															content: [
 																{
-																	elem: 'title',
-																	cls: 'js-dotted',
-																	content: [
-																		{
-																			tag: 'a',
-																			attrs: { href: '#' },
-																			content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-																		}
-																	]
-																},
-																{
-																	elem: 'date',
-																	content: '10.12.15'
-																},
-																{
-																	elem: 'text',
-																	cls: 'js-dotted',
-																	content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-																},
-																{
-																	elem: 'more',
-																	content: [
-																		{
-																			tag: 'a',
-																			elem: 'more-link',
-																			attrs: { href: '#' },
-																			content: 'подробнее'
-																		}
-																	]
+																	block: 'more-button',
+																	tag: 'a',
+																	attrs: { href: '#' },
+																	content: 'подробнее'
 																}
 															]
 														}
 													]
-												},
+												}
+											]
+										},
+										{
+											block: 'news-list-item',
+											content: [
 												{
-													elem: 'item',
+													elem: 'thumb',
 													content: [
 														{
-															elem: 'thumb',
-															content: [
-																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/last-news/1.png' },
-																}
-															]
-														},
-														{
-															elem: 'info',
-															content: [
-																{
-																	elem: 'title',
-																	cls: 'js-dotted',
-																	content: [
-																		{
-																			tag: 'a',
-																			attrs: { href: '#' },
-																			content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-																		}
-																	]
-																},
-																{
-																	elem: 'date',
-																	content: '10.12.15'
-																},
-																{
-																	elem: 'text',
-																	cls: 'js-dotted',
-																	content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-																},
-																{
-																	elem: 'more',
-																	content: [
-																		{
-																			tag: 'a',
-																			elem: 'more-link',
-																			attrs: { href: '#' },
-																			content: 'подробнее'
-																		}
-																	]
-																}
-															]
+															elem: 'image',
+															tag: 'img',
+															attrs: { src: 'img/tmp/last-news/1.png' },
 														}
 													]
 												},
 												{
-													elem: 'item',
+													elem: 'info',
 													content: [
 														{
-															elem: 'thumb',
+															elem: 'title',
+															cls: 'js-dotted',
 															content: [
 																{
-																	elem: 'image',
-																	tag: 'img',
-																	attrs: { src: 'img/tmp/last-news/1.png' },
+																	tag: 'a',
+																	attrs: { href: '#' },
+																	content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
 																}
 															]
 														},
 														{
-															elem: 'info',
+															elem: 'date',
+															content: '10.12.15'
+														},
+														{
+															elem: 'text',
+															cls: 'js-dotted',
+															content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
+														},
+														{
+															elem: 'more',
 															content: [
 																{
-																	elem: 'title',
-																	cls: 'js-dotted',
-																	content: [
-																		{
-																			tag: 'a',
-																			attrs: { href: '#' },
-																			content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-																		}
-																	]
-																},
+																	block: 'more-button',
+																	tag: 'a',
+																	attrs: { href: '#' },
+																	content: 'подробнее'
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											block: 'news-list-item',
+											content: [
+												{
+													elem: 'thumb',
+													content: [
+														{
+															elem: 'image',
+															tag: 'img',
+															attrs: { src: 'img/tmp/last-news/1.png' },
+														}
+													]
+												},
+												{
+													elem: 'info',
+													content: [
+														{
+															elem: 'title',
+															cls: 'js-dotted',
+															content: [
 																{
-																	elem: 'date',
-																	content: '10.12.15'
-																},
-																{
-																	elem: 'text',
-																	cls: 'js-dotted',
+																	tag: 'a',
+																	attrs: { href: '#' },
 																	content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-																},
+																}
+															]
+														},
+														{
+															elem: 'date',
+															content: '10.12.15'
+														},
+														{
+															elem: 'text',
+															cls: 'js-dotted',
+															content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
+														},
+														{
+															elem: 'more',
+															content: [
 																{
-																	elem: 'more',
-																	content: [
-																		{
-																			tag: 'a',
-																			elem: 'more-link',
-																			attrs: { href: '#' },
-																			content: 'подробнее'
-																		}
-																	]
+																	block: 'more-button',
+																	tag: 'a',
+																	attrs: { href: '#' },
+																	content: 'подробнее'
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											block: 'news-list-item',
+											content: [
+												{
+													elem: 'thumb',
+													content: [
+														{
+															elem: 'image',
+															tag: 'img',
+															attrs: { src: 'img/tmp/last-news/1.png' },
+														}
+													]
+												},
+												{
+													elem: 'info',
+													content: [
+														{
+															elem: 'title',
+															cls: 'js-dotted',
+															content: [
+																{
+																	tag: 'a',
+																	attrs: { href: '#' },
+																	content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
+																}
+															]
+														},
+														{
+															elem: 'date',
+															content: '10.12.15'
+														},
+														{
+															elem: 'text',
+															cls: 'js-dotted',
+															content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
+														},
+														{
+															elem: 'more',
+															content: [
+																{
+																	block: 'more-button',
+																	tag: 'a',
+																	attrs: { href: '#' },
+																	content: 'подробнее'
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											block: 'news-list-item',
+											content: [
+												{
+													elem: 'thumb',
+													content: [
+														{
+															elem: 'image',
+															tag: 'img',
+															attrs: { src: 'img/tmp/last-news/1.png' },
+														}
+													]
+												},
+												{
+													elem: 'info',
+													content: [
+														{
+															elem: 'title',
+															cls: 'js-dotted',
+															content: [
+																{
+																	tag: 'a',
+																	attrs: { href: '#' },
+																	content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
+																}
+															]
+														},
+														{
+															elem: 'date',
+															content: '10.12.15'
+														},
+														{
+															elem: 'text',
+															cls: 'js-dotted',
+															content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
+														},
+														{
+															elem: 'more',
+															content: [
+																{
+																	block: 'more-button',
+																	tag: 'a',
+																	attrs: { href: '#' },
+																	content: 'подробнее'
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											block: 'news-list-item',
+											content: [
+												{
+													elem: 'thumb',
+													content: [
+														{
+															elem: 'image',
+															tag: 'img',
+															attrs: { src: 'img/tmp/last-news/1.png' },
+														}
+													]
+												},
+												{
+													elem: 'info',
+													content: [
+														{
+															elem: 'title',
+															cls: 'js-dotted',
+															content: [
+																{
+																	tag: 'a',
+																	attrs: { href: '#' },
+																	content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
+																}
+															]
+														},
+														{
+															elem: 'date',
+															content: '10.12.15'
+														},
+														{
+															elem: 'text',
+															cls: 'js-dotted',
+															content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
+														},
+														{
+															elem: 'more',
+															content: [
+																{
+																	block: 'more-button',
+																	tag: 'a',
+																	attrs: { href: '#' },
+																	content: 'подробнее'
 																}
 															]
 														}

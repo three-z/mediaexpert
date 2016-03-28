@@ -30,12 +30,10 @@
 					content: [
 						{
 							elem: 'layout',
-							mods: { 'container': true },
 							mix: { block: 'container' },
 							content: [
 								{
-									elem: 'layout',
-									mods: { 'left': true },
+									elem: 'layout-left',
 									content: [
 										{
 											elem: 'title',
@@ -79,8 +77,7 @@
 									]
 								},
 								{
-									elem: 'layout',
-									mods: { 'right': true },
+									elem: 'layout-right',
 									content: [
 										{
 											block: 'home-banner',
@@ -109,16 +106,14 @@
 					block: 'home-on-tv',
 					content: [
 						{
-							elem: 'info',
+							elem: 'layout',
+							mix: { block: 'container' },
 							content: [
 								{
-									elem: 'layout',
-									mods: { 'container': true },
-									mix: { block: 'container' },
+									elem: 'info',
 									content: [
 										{
-											elem: 'layout',
-											mods: { 'left': true },
+											elem: 'headers',
 											content: [
 												{
 													elem: 'title',
@@ -132,26 +127,13 @@
 											]
 										},
 										{
-											elem: 'layout',
-											mods: { 'right': true },
-											content: [
-												{
-													elem: 'description',
-													content: 'Огромный опыт работы с телеканалами, большой объем размещения и низкий проценткомиссии, - все это позволяет предлагать нашим клиентам оптимальные цены наразмещение ТВ рекламы.'
-												}
-											]
+											elem: 'description',
+											content: 'Огромный опыт работы с телеканалами, большой объем размещения и низкий проценткомиссии, - все это позволяет предлагать нашим клиентам оптимальные цены наразмещение ТВ рекламы.'
 										}
 									]
-								}
-							]
-						},
-						{
-							block: 'on-tv-slider',
-							content: [
+								},
 								{
-									elem: 'layout',
-									mods: { 'container': true },
-									mix: { block: 'container' },
+									block: 'on-tv-slider',
 									content: [
 										{
 											elem: 'list',
@@ -306,16 +288,14 @@
 					block: 'home-on-radio',
 					content: [
 						{
-							elem: 'info',
+							elem: 'layout',
+							mix: { block: 'container' },
 							content: [
 								{
-									elem: 'layout',
-									mods: { 'container': true },
-									mix: { block: 'container' },
+									elem: 'info',
 									content: [
 										{
-											elem: 'layout',
-											mods: { 'left': true },
+											elem: 'headers',
 											content: [
 												{
 													elem: 'title',
@@ -328,26 +308,13 @@
 											]
 										},
 										{
-											elem: 'layout',
-											mods: { 'right': true },
-											content: [
-												{
-													elem: 'description',
-													content: 'Длительный опыт работы с радиостанциями, большой объем размещения и низкий процентагентского вознаграждения позволяет предлагать нашим клиентам оптимальные цены наразмещение рекламы на радио.'
-												}
-											]
+											elem: 'description',
+											content: 'Длительный опыт работы с радиостанциями, большой объем размещения и низкий процентагентского вознаграждения позволяет предлагать нашим клиентам оптимальные цены наразмещение рекламы на радио.'
 										}
 									]
-								}
-							]
-						},
-						{
-							block: 'on-radio-slider',
-							content: [
+								},
 								{
-									elem: 'layout',
-									mods: { 'container': true },
-									mix: { block: 'container' },
+									block: 'on-radio-slider',
 									content: [
 										{
 											elem: 'list',
@@ -549,7 +516,6 @@
 					content: [
 						{
 							elem: 'layout',
-							mods: { 'container': true },
 							mix: { block: 'container' },
 							content: [
 								{
@@ -740,7 +706,6 @@
 					content: [
 						{
 							elem: 'layout',
-							mods: { 'container': true },
 							mix: { block: 'container' },
 							content: [
 								{

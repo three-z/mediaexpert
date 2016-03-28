@@ -10,7 +10,6 @@
 					content: [
 						{
 							elem: 'layout',
-							mods: { 'container': true },
 							mix: { block: 'container' },
 							content: [
 								{
@@ -45,213 +44,221 @@
 					]
 				},
 				{
+					block: 'page-title',
+					mods: { 'underline': true },
+					content: [
+						{
+							elem: 'layout',
+							mix: { block: 'container' },
+							content: [
+								{
+									elem : 'text',
+									content : 'Отзывы'
+								}
+							]
+						}
+					]
+				},
+				{
 					block: 'reviews',
 					content: [
 						{
 							elem: 'layout',
-							mods: { 'container': true },
 							mix: { block: 'container' },
 							content: [
-								{
-									elem: 'title',
-									cls: 'js-gradient',
-									content: 'Отзывы'
-								},
 								{
 									block: 'reviews-list',
 									content: [
 										{
-											elem: 'list',
+											block: 'reviews-list-item',
 											content: [
 												{
-													elem: 'item',
+													elem: 'text',
 													content: [
 														{
-															elem: 'text',
-															content: [
-																{
-																	elem: 'cite',
-																	cls: 'js-dotted',
-																	content: 'Еще никто не оставлял отзыв об этой компании и мы не знаем, работает она хорошо или плохо. Может быть вы расскажете свое мнение о ней? Еще никто не оставлял отзыв об этой компании и мы не знаем, работает она хорошо или плохо. Может быть вы расскажете свое мнение о ней?'
-																},
-															]
+															elem: 'cite',
+															cls: 'js-dotted',
+															content: 'Еще никто не оставлял отзыв об этой компании и мы не знаем, работает она хорошо или плохо. Может быть вы расскажете свое мнение о ней? Еще никто не оставлял отзыв об этой компании и мы не знаем, работает она хорошо или плохо. Может быть вы расскажете свое мнение о ней?'
 														},
+													]
+												},
+												{
+													elem: 'thumb',
+													content: [
 														{
-															elem: 'thumb',
+															tag: 'a',
+															attrs: { href: '#' },
 															content: [
 																{
-																	tag: 'a',
-																	attrs: { href: '#' },
-																	content: [
-																		{
-																			elem: 'image',
-																			tag: 'img',
-																			attrs: { src: 'img/tmp/reviews/1.jpg' },
-																		}
-																	]
+																	elem: 'image',
+																	tag: 'img',
+																	attrs: { src: 'img/tmp/reviews/1.jpg' },
 																}
+															]
+														}
 
-															]
+													]
+												},
+												{
+													elem: 'info',
+													content: [
+														{
+															elem: 'company',
+															content: 'Лаура-Архангельск'
 														},
 														{
-															elem: 'info',
-															content: [
-																{
-																	elem: 'company',
-																	content: 'Лаура-Архангельск'
-																},
-																{
-																	elem: 'position',
-																	content: 'Маркетолог'
-																},
-																{
-																	elem: 'date',
-																	content: '7 августа 2012'
-																},
-																{
-																	elem: 'name',
-																	content: 'Никка Милонова'
-																}
-															]
+															elem: 'position',
+															content: 'Маркетолог'
 														},
 														{
-															elem: 'more',
-															content: [
-																{
-																	tag: 'a',
-																	elem: 'more-link',
-																	attrs: { href: '#' },
-																	content: 'подробнее'
-																}
-															]
+															elem: 'date',
+															content: '7 августа 2012'
+														},
+														{
+															elem: 'name',
+															content: 'Никка Милонова'
 														}
 													]
 												},
 												{
-													elem: 'item',
+													elem: 'more',
 													content: [
 														{
-															elem: 'text',
-															content: [
-																{
-																	elem: 'cite',
-																	cls: 'js-dotted',
-																	content: 'Еще никто не оставлял отзыв об этой компании и мы не знаем, работает она хорошо или плохо. Может быть вы расскажете свое мнение о ней? Еще никто не оставлял отзыв об этой компании и мы не знаем, работает она хорошо или плохо. Может быть вы расскажете свое мнение о ней?'
-																},
-															]
-														},
+															block: 'more-button',
+															mods: { 'shadow': true },
+															tag: 'a',
+															attrs: { href: '#' },
+															content: 'подробнее'
+														}
+													]
+												}
+											]
+										},
+										{
+											block: 'reviews-list-item',
+											content: [
+												{
+													elem: 'text',
+													content: [
 														{
-															elem: 'thumb',
+															elem: 'cite',
+															cls: 'js-dotted',
+															content: 'Еще никто не оставлял отзыв об этой компании и мы не знаем, работает она хорошо или плохо. Может быть вы расскажете свое мнение о ней? Еще никто не оставлял отзыв об этой компании и мы не знаем, работает она хорошо или плохо. Может быть вы расскажете свое мнение о ней?'
+														},
+													]
+												},
+												{
+													elem: 'thumb',
+													content: [
+														{
+															tag: 'a',
+															attrs: { href: '#' },
 															content: [
 																{
-																	tag: 'a',
-																	attrs: { href: '#' },
-																	content: [
-																		{
-																			elem: 'image',
-																			tag: 'img',
-																			attrs: { src: 'img/tmp/reviews/1.jpg' },
-																		}
-																	]
+																	elem: 'image',
+																	tag: 'img',
+																	attrs: { src: 'img/tmp/reviews/1.jpg' },
 																}
+															]
+														}
 
-															]
+													]
+												},
+												{
+													elem: 'info',
+													content: [
+														{
+															elem: 'company',
+															content: 'Лаура-Архангельск'
 														},
 														{
-															elem: 'info',
-															content: [
-																{
-																	elem: 'company',
-																	content: 'Лаура-Архангельск'
-																},
-																{
-																	elem: 'position',
-																	content: 'Маркетолог'
-																},
-																{
-																	elem: 'date',
-																	content: '7 августа 2012'
-																},
-																{
-																	elem: 'name',
-																	content: 'Никка Милонова'
-																}
-															]
+															elem: 'position',
+															content: 'Маркетолог'
 														},
 														{
-															elem: 'more',
-															content: [
-																{
-																	tag: 'a',
-																	elem: 'more-link',
-																	attrs: { href: '#' },
-																	content: 'подробнее'
-																}
-															]
+															elem: 'date',
+															content: '7 августа 2012'
+														},
+														{
+															elem: 'name',
+															content: 'Никка Милонова'
 														}
 													]
 												},
 												{
-													elem: 'item',
+													elem: 'more',
 													content: [
 														{
-															elem: 'text',
-															content: [
-																{
-																	elem: 'cite',
-																	cls: 'js-dotted',
-																	content: 'Еще никто не оставлял отзыв об этой компании и мы не знаем, работает она хорошо или плохо. Может быть вы расскажете свое мнение о ней? Еще никто не оставлял отзыв об этой компании и мы не знаем, работает она хорошо или плохо. Может быть вы расскажете свое мнение о ней?'
-																},
-															]
-														},
+															block: 'more-button',
+															mods: { 'shadow': true },
+															tag: 'a',
+															attrs: { href: '#' },
+															content: 'подробнее'
+														}
+													]
+												}
+											]
+										},
+										{
+											block: 'reviews-list-item',
+											content: [
+												{
+													elem: 'text',
+													content: [
 														{
-															elem: 'thumb',
+															elem: 'cite',
+															cls: 'js-dotted',
+															content: 'Еще никто не оставлял отзыв об этой компании и мы не знаем, работает она хорошо или плохо. Может быть вы расскажете свое мнение о ней? Еще никто не оставлял отзыв об этой компании и мы не знаем, работает она хорошо или плохо. Может быть вы расскажете свое мнение о ней?'
+														},
+													]
+												},
+												{
+													elem: 'thumb',
+													content: [
+														{
+															tag: 'a',
+															attrs: { href: '#' },
 															content: [
 																{
-																	tag: 'a',
-																	attrs: { href: '#' },
-																	content: [
-																		{
-																			elem: 'image',
-																			tag: 'img',
-																			attrs: { src: 'img/tmp/reviews/1.jpg' },
-																		}
-																	]
+																	elem: 'image',
+																	tag: 'img',
+																	attrs: { src: 'img/tmp/reviews/1.jpg' },
 																}
+															]
+														}
 
-															]
+													]
+												},
+												{
+													elem: 'info',
+													content: [
+														{
+															elem: 'company',
+															content: 'Лаура-Архангельск'
 														},
 														{
-															elem: 'info',
-															content: [
-																{
-																	elem: 'company',
-																	content: 'Лаура-Архангельск'
-																},
-																{
-																	elem: 'position',
-																	content: 'Маркетолог'
-																},
-																{
-																	elem: 'date',
-																	content: '7 августа 2012'
-																},
-																{
-																	elem: 'name',
-																	content: 'Никка Милонова'
-																}
-															]
+															elem: 'position',
+															content: 'Маркетолог'
 														},
 														{
-															elem: 'more',
-															content: [
-																{
-																	tag: 'a',
-																	elem: 'more-link',
-																	attrs: { href: '#' },
-																	content: 'подробнее'
-																}
-															]
+															elem: 'date',
+															content: '7 августа 2012'
+														},
+														{
+															elem: 'name',
+															content: 'Никка Милонова'
+														}
+													]
+												},
+												{
+													elem: 'more',
+													content: [
+														{
+															block: 'more-button',
+															mods: { 'shadow': true },
+															tag: 'a',
+															attrs: { href: '#' },
+															content: 'подробнее'
 														}
 													]
 												}

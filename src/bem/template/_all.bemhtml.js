@@ -1,57 +1,160 @@
-block('home-advantages').elem('title')(
-    tag()('h2')
-);
+block('template-popups').replace()(function() {
+	var ctx = this.ctx;
 
-block('home-advantages').elem('list')(
-    tag()('ul')
-);
+	return [
+		{
+			block: 'callback-popup',
+			attrs: { 'id': 'callback-popup' },
+			mix: { block: 'popup' },
+			content: [
+				{
+					elem : 'title',
+					content : 'Введите ваш номер телефона'
+				},
+				{
+					block : 'callback-popup-form',
+					tag: 'form',
+					content : [
+						{
+							elem : 'phone',
+							content : [
+								{
+									tag: '',
+									content : '+7'
+								},
+								{
+									elem : 'input',
+									tag: 'input',
+									attrs: { 'type': 'text' }
+								},
+							]
+						},
+						{
+							elem : 'buttons',
+							content : [
+								{
+									elem: 'button',
+									tag: 'input',
+									attrs: { type: 'submit', value: 'Заказать звонок' }
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	];
+});
 
-block('home-advantages').elem('item')(
-    tag()('li')
-);
+block('template-page-title').replace()(function() {
+	var ctx = this.ctx;
 
-block('home-on-tv').elem('title')(
-    tag()('h2')
-);
+	return [
+		{
+			block: 'page-title',
+			mods: {
+				underline: this.ctx.underline ? true : undefined
+			},
+			content: [
+				{
+					elem: 'layout',
+					mix: { block: 'container' },
+					content: [
+						{
+							elem : 'text',
+							tag: 'h2',
+							content : ctx.title
+						}
+					]
+				}
+			]
+		}
+	];
+});
 
-block('home-on-radio').elem('title')(
-    tag()('h2')
-);
-block('news-item').elem('title')(
-    tag()('h2')
-);
-block('news').elem('title')(
-    tag()('h2')
-);
-block('on-radio-item').elem('title')(
-    tag()('h2')
-);
-block('on-radio').elem('title')(
-    tag()('h2')
-);
-block('on-tv-item').elem('title')(
-    tag()('h2')
-);
-block('on-tv').elem('title')(
-    tag()('h2')
-);
-block('reviews').elem('title')(
-    tag()('h2')
-);
-block('video').elem('title')(
-    tag()('h2')
-);
-block('footer').elem('title')(
-    tag()('h3')
-);
+block('template-request-form').replace()(function() {
+	var ctx = this.ctx;
 
-block('secondary-navigation').elem('list')(
-    tag()('ul')
-);
+	return [
+		{
+			block: 'request-form',
+			content: [
+				{
+					elem: 'form',
+					tag: 'form',
+					content: [
+						{
+							tag: 'input',
+							elem: 'input',
+							attrs: { type: 'text', placeholder: 'Ваше имя' }
+						},
+						{
+							tag: 'input',
+							elem: 'input',
+							attrs: { type: 'text', placeholder: 'Компания' }
+						},
+						{
+							tag: 'input',
+							elem: 'input',
+							mods: { 'small': true },
+							attrs: { type: 'text', placeholder: 'Телефон' }
+						},
+						{
+							tag: 'input',
+							elem: 'input',
+							mods: { 'small': true },
+							attrs: { type: 'text', placeholder: 'E-mail' }
+						},
+						{
+							tag: 'input',
+							elem: 'button',
+							attrs: { type: 'submit', placeholder: 'Отправить' }
+						}
+					]
+				}
+			]
+		}
+	];
+});
 
-block('secondary-navigation').elem('item')(
-    tag()('li')
-);
+block('template-breadcrumbs').replace()(function() {
+	var ctx = this.ctx;
+
+	return [
+		{
+			block: 'breadcrumbs',
+			content: [
+				{
+					elem: 'layout',
+					mix: { block: 'container' },
+					content: [
+						{
+							elem: 'list',
+							tag: 'ul',
+							content: this.ctx.links.map(function(item) {
+								return {
+									elem: 'item',
+									tag: 'li',
+									content: [
+										{
+											elem: 'link',
+											tag: 'a',
+											attrs: { href: item.url },
+											content: item.content
+										}
+									]
+								};
+							})
+						}
+					]
+				}
+			]
+		}
+	];
+});
+
+// header
+
 block('site-title')(
     tag()('h1')
 );
@@ -64,6 +167,8 @@ block('social-links').elem('item')(
     tag()('li')
 );
 
+// navigation
+
 block('navigation').elem('list')(
     tag()('ul')
 );
@@ -71,6 +176,23 @@ block('navigation').elem('list')(
 block('navigation').elem('item')(
     tag()('li')
 );
+
+// footer
+
+block('footer').elem('title')(
+    tag()('h3')
+);
+
+block('secondary-navigation').elem('list')(
+    tag()('ul')
+);
+
+block('secondary-navigation').elem('item')(
+    tag()('li')
+);
+
+// elements
+
 block('pagination').elem('list')(
     tag()('ul')
 );
@@ -82,22 +204,6 @@ block('pagination').elem('item')(
 block('pagination').elem('current')(
     tag()('span')
 );
-
-block('breadcrumbs').elem('list')(
-    tag()('ul')
-);
-
-block('breadcrumbs').elem('item')(
-    tag()('li')
-);
-
-block('last-news').elem('title')(
-    tag()('h2')
-);
-
-block('clients').elem('title')(
-    tag()('h2')
-);
 block('template-footer').replace()(function() {
 	var ctx = this.ctx;
 
@@ -107,12 +213,10 @@ block('template-footer').replace()(function() {
 			content: [
 				{
 					elem: 'layout',
-					mods: { 'container': true },
 					mix: { block: 'container' },
 					content: [
 						{
-							elem: 'layout',
-							mods: { 'left': true },
+							elem: 'layout-left',
 							content: [
 								{
 									block: 'secondary-logo',
@@ -134,8 +238,7 @@ block('template-footer').replace()(function() {
 							]
 						},
 						{
-							elem: 'layout',
-							mods: { 'right': true },
+							elem: 'layout-right',
 							content: [
 								{
 									block: 'secondary-site-phone',
@@ -152,20 +255,16 @@ block('template-footer').replace()(function() {
 			content: [
 				{
 					elem: 'layout',
-					mods: { 'container': true },
 					mix: { block: 'container' },
 					content: [
 						{
-							elem: 'layout',
-							mods: { 'left': true },
+							elem: 'layout-left',
 							content: [
 								{
-									elem: 'layout',
-									mods: { 'columns': true },
+									elem: 'columns',
 									content: [
 										{
-											elem: 'layout',
-											mods: { 'column': true },
+											elem: 'column',
 											content: [
 												{
 													elem: 'title',
@@ -261,8 +360,7 @@ block('template-footer').replace()(function() {
 											]
 										},
 										{
-											elem: 'layout',
-											mods: { 'column': true },
+											elem: 'column',
 											content: [
 												{
 													elem: 'title',
@@ -391,8 +489,7 @@ block('template-footer').replace()(function() {
 											]
 										},
 										{
-											elem: 'layout',
-											mods: { 'column': true },
+											elem: 'column',
 											content: [
 												{
 													elem: 'title',
@@ -514,8 +611,7 @@ block('template-footer').replace()(function() {
 							]
 						},
 						{
-							elem: 'layout',
-							mods: { 'right': true },
+							elem: 'layout-right',
 							content: [
 								{
 									elem: 'title',
@@ -563,7 +659,6 @@ block('template-footer').replace()(function() {
 			content: [
 				{
 					elem: 'layout',
-					mods: { 'container': true },
 					mix: { block: 'container' },
 					content: [
 						{
@@ -585,12 +680,10 @@ block('template-header').replace()(function() {
 			content: [
 				{
 					elem: 'layout',
-					mods: { 'container': true },
 					mix: { block: 'container' },
 					content: [
 						{
-							elem: 'layout',
-							mods: { 'left': true },
+							elem: 'layout-left',
 							content: [
 								{
 									block: 'site-title',
@@ -599,8 +692,7 @@ block('template-header').replace()(function() {
 							]
 						},
 						{
-							elem: 'layout',
-							mods: { 'right': true },
+							elem: 'layout-right',
 							content: [
 								{
 									block: 'social-links',
@@ -656,12 +748,10 @@ block('template-header').replace()(function() {
 			content: [
 				{
 					elem: 'layout',
-					mods: { 'container': true },
 					mix: { block: 'container' },
 					content: [
 						{
-							elem: 'layout',
-							mods: { 'left': true },
+							elem: 'layout-left',
 							content: [
 								{
 									block: 'logo',
@@ -683,8 +773,7 @@ block('template-header').replace()(function() {
 							]
 						},
 						{
-							elem: 'layout',
-							mods: { 'center': true },
+							elem: 'layout-center',
 							content: [
 								{
 									block: 'site-address',
@@ -697,8 +786,7 @@ block('template-header').replace()(function() {
 							]
 						},
 						{
-							elem: 'layout',
-							mods: { 'right': true },
+							elem: 'layout-right',
 							content: [
 								{
 									block: 'site-phone',
@@ -710,7 +798,8 @@ block('template-header').replace()(function() {
 										{
 											elem: 'button',
 											tag: 'a',
-											attrs: { href: '#' },
+											cls: 'fancybox',
+											attrs: { href: '#callback-popup' },
 											content: 'Заказать звонок'
 										}
 									]
@@ -726,7 +815,6 @@ block('template-header').replace()(function() {
 			content: [
 				{
 					elem: 'layout',
-					mods: { 'container': true },
 					mix: { block: 'container', mods: { 'no-padding': true } },
 					content: [
 						{
@@ -851,6 +939,10 @@ block('template-page').replace()(function() {
 						},
 						{
 							tag: 'link',
+							attrs: { rel: 'stylesheet', href: 'bower_components/fancybox/source/jquery.fancybox.css' }
+						},
+						{
+							tag: 'link',
 							attrs: { rel: 'stylesheet', href: 'css/styles.css' }
 						}
 					]
@@ -868,6 +960,9 @@ block('template-page').replace()(function() {
 								ctx.content,
 								{
 									block: 'template-footer'
+								},
+								{
+									block: 'template-popups'
 								}
 							]
 						},
@@ -886,6 +981,100 @@ block('template-page').replace()(function() {
 						{
 							tag: 'script',
 							attrs: { src: 'bower_components/jQuery.dotdotdot/src/jquery.dotdotdot.min.js' }
+						},
+						{
+							tag: 'script',
+							attrs: { src: 'bower_components/fancybox/source/jquery.fancybox.pack.js' }
+						},
+						{
+							tag: 'script',
+							attrs: { src: 'js/scripts.js' }
+						},
+					]
+				}
+			]
+		}
+	];
+});
+block('template-page').replace()(function() {
+	var ctx = this.ctx;
+
+	return [
+		'<!DOCTYPE html>',
+		{
+			tag: 'html',
+			content: [
+				{
+					tag: 'head',
+					content: [
+						{
+							tag: 'meta',
+							attrs: { charset: 'utf-8' }
+						},
+						{
+							tag: 'title',
+							content: ctx.title
+						},
+						{
+							tag: 'link',
+							attrs: { rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&subset=latin,latin-ext,cyrillic' }
+						},
+						{
+							tag: 'link',
+							attrs: { rel: 'stylesheet', href: 'bower_components/normalize.css/normalize.css' }
+						},
+						{
+							tag: 'link',
+							attrs: { rel: 'stylesheet', href: 'bower_components/slick.js/slick/slick.css' }
+						},
+						{
+							tag: 'link',
+							attrs: { rel: 'stylesheet', href: 'bower_components/fancybox/source/jquery.fancybox.css' }
+						},
+						{
+							tag: 'link',
+							attrs: { rel: 'stylesheet', href: 'css/styles.css' }
+						}
+					]
+				},
+				{
+					tag: 'body',
+					content: [
+						{
+							cls: 'page',
+							bem: false,
+							content: [
+								{
+									block: 'template-header'
+								},
+								ctx.content,
+								{
+									block: 'template-footer'
+								},
+								{
+									block: 'template-popups'
+								}
+							]
+						},
+						{
+							tag: 'script',
+							attrs: { src: 'bower_components/jquery/dist/jquery.min.js' }
+						},
+						{
+							tag: 'script',
+							attrs: { src: 'bower_components/slick.js/slick/slick.min.js' }
+						},
+						{
+							tag: 'script',
+							attrs: { src: 'bower_components/pxgradient/pxgradient-1.0.3.min.js' }
+						},
+						{
+							tag: 'script',
+							attrs: { src: 'bower_components/jQuery.dotdotdot/src/jquery.dotdotdot.min.js' }
+						},
+						{
+							tag: 'script',
+							attrs: { src: 'bower_components/fancybox/source/jquery.fancybox.pack.js' }
 						},
 						{
 							tag: 'script',

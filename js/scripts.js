@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+	$('.fancybox').fancybox({
+		'fitToView': false
+	});
+
 	$('.home-slider__list').slick({
 		autoplay: true,
 		autoplaySpeed: 5000,
@@ -53,6 +57,19 @@ $(document).ready(function() {
 		variableWidth: true
 	});
 
+	$('.last-reclam-slider__list').slick({
+		autoplay: false,
+		autoplaySpeed: 5000,
+		dots: false,
+		arrows: true,
+		infinite: true,
+		speed: 500,
+		adaptiveHeight: false,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		variableWidth: true
+	});
+
 	$('.clients-slider__list').slick({
 		autoplay: false,
 		autoplaySpeed: 5000,
@@ -65,11 +82,15 @@ $(document).ready(function() {
 		slidesToScroll: 1,
 		variableWidth: true
 	});
+
+	$('.vacancies-form__attach-button input').on('change', function () {
+		$(this).parents('.vacancies-form__attach').find('.vacancies-form__input').val($(this).val());
+	});
 });
 
 $(window).bind('load', function() {
 
-	$('.js-gradient').pxgradient({
+	$('.page-title__text, .js-gradient').pxgradient({
 		step: 2,
 		colors: ['#0087d9','#005dbd'],
 		dir: 'y'

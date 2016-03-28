@@ -10,7 +10,6 @@
 					content: [
 						{
 							elem: 'layout',
-							mods: { 'container': true },
 							mix: { block: 'container' },
 							content: [
 								{
@@ -60,7 +59,6 @@
 					content: [
 						{
 							elem: 'layout',
-							mods: { 'container': true },
 							mix: { block: 'container' },
 							content: [
 								{

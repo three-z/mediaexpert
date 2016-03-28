@@ -7,16 +7,17 @@
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&amp;subset=latin,latin-ext,cyrillic" />
 		<link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
 		<link rel="stylesheet" href="bower_components/slick.js/slick/slick.css" />
+		<link rel="stylesheet" href="bower_components/fancybox/source/jquery.fancybox.css" />
 		<link rel="stylesheet" href="css/styles.css" />
 	</head>
 
 	<body>
 		<div class="page">
 			<div class="top-line">
-				<div class="top-line__layout top-line__layout_container container">
-					<div class="top-line__layout top-line__layout_left">
+				<div class="top-line__layout container">
+					<div class="top-line__layout-left">
 						<h1 class="site-title">Медиа Эксперт Вашего Бизнеса</h1></div>
-					<div class="top-line__layout top-line__layout_right">
+					<div class="top-line__layout-right">
 						<div class="social-links">
 							<ul class="social-links__list">
 								<li class="social-links__item"><a class="social-links__link" href="#">В</a></li>
@@ -28,24 +29,24 @@
 				</div>
 			</div>
 			<div class="header">
-				<div class="header__layout header__layout_container container">
-					<div class="header__layout header__layout_left">
+				<div class="header__layout container">
+					<div class="header__layout-left">
 						<div class="logo">
 							<a class="logo__link" href="#"><img class="logo__image" src="img/logo.png" /></a>
 						</div>
 					</div>
-					<div class="header__layout header__layout_center">
+					<div class="header__layout-center">
 						<div class="site-address">г. Архангельск, ул. Попова, д. 6</div>
 						<div class="site-slogan">Производство и размещение аудио и видео роликов</div>
 					</div>
-					<div class="header__layout header__layout_right">
+					<div class="header__layout-right">
 						<div class="site-phone"><small>+7(8182)</small> 65-79-70, 65-79-80</div>
-						<div class="callback"><a class="callback__button" href="#">Заказать звонок</a></div>
+						<div class="callback"><a class="callback__button fancybox" href="#callback-popup">Заказать звонок</a></div>
 					</div>
 				</div>
 			</div>
 			<div class="navigation">
-				<div class="navigation__layout navigation__layout_container container container_no-padding">
+				<div class="navigation__layout container container_no-padding">
 					<ul class="navigation__list">
 						<li class="navigation__item navigation__item_active"><a class="navigation__link" href="#">Главная</a></li>
 						<li class="navigation__item"><a class="navigation__link" href="#">Компания</a></li>
@@ -59,57 +60,62 @@
 			</div>
 			<div class="content">
 				<div class="breadcrumbs">
-					<div class="breadcrumbs__layout breadcrumbs__layout_container container">
-						<ul class="breadcrumbs__list">
-							<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
-							<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Новости</a></li>
-							<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">09.12.15</a></li>
-							<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Робот-бармен угостит коктейлем на основе психологического портрета в Facebook</a></li>
-						</ul>
+					<div class="breadcrumbs__layout container">
+						<div class="breadcrumbs__list">
+							<div class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></div>
+							<div class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Новости</a></div>
+							<div class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">09.12.15</a></div>
+							<div class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Робот-бармен угостит коктейлем на основе психологического портрета в Facebook</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="page-title page-title_underline">
+					<div class="page-title__layout container">
+						<div class="page-title__text">Новости</div>
 					</div>
 				</div>
 				<div class="news-item">
-					<div class="news-item__layout news-item__layout_container container">
-						<h2 class="news-item__title js-gradient">Новости</h2></div>
-					<div class="news-item__spot">
-						<div class="news-item__layout news-item__layout_container container">
-							<div class="news-item__thumb">
-								<a href="#"><img class="news-item__image" src="img/tmp/news/1.jpg" /></a>
+					<div class="news-spot">
+						<div class="news-spot__layout container">
+							<div class="news-spot__thumb">
+								<a href="#"><img src="img/tmp/news/1.jpg" /></a>
 							</div>
-							<div class="news-item__date">09.12.15</div>
-							<div class="news-item__name">Робот-бармен угостит коктейлем на основе психологического портрета в Facebook</div>
+							<div class="news-spot__date">09.12.15</div>
+							<div class="news-spot__name">Робот-бармен угостит коктейлем на основе психологического портрета в Facebook</div>
 						</div>
 					</div>
-					<div class="news-item__layout news-item__layout_container container">
-						<div class="news-item__text"><img src="img/tmp/news/2.jpg" alt="">
-							<h3>Группа немецких инженеров изобрела робота-бармена, готовящего коктейли, состав которых максимально приближен к психотипу человека. В основе разработки лежит алгоритм психологов из Кембриджского университета, который способен составить детальный психологический портрет пользователя Facebook, основываясь лишь на его "лайках" в социальной сети.</h3>В сентябре британскими учеными был запущен сайт Apply Special Sauce, который, отталкиваясь от профиля в Facebook, может охарактеризовать ключевые особенности психотипа человека, степень удовлетворенности жизнью, выявить его религиозные, политические
-							и даже сексуальные предпочтения. <br><br>Более того, инструмент может попытаться угадать пол, образование и семейное положение, а также выстроить модель личности в соответствии с так называемой "большой пятеркой" индивидуальных черт (экстраверсия,
-							доброжелательность, добросовестность, нейротизм и открытость новому опыту). Эта модель позволяет определить, например, насколько импульсивен или сдержан, либерален или консервативен человек. <br><br>Взяв на вооружение опыт психологов, энтузиасты
-							из Германии создали робота Social Shot, который готовит напитки на основе "большой пятерки" личностных качеств человека. Нейротизм олицетворяет красный гранатовый сироп, экстраверсию — желтый лимонный сок, открытость — синий Кюрасао, доброжелательность
-							— зеленый базиликовый ликер, а добросовестность — чистая водка. "Мы хотели создать классный способ, чтобы люди могли визуализировать свою индивидуальность… и выпить ее!" — сказал один из разработчиков Social Shot Саймон Фрамбах.Заказать коктейль
-							и узнать, какова их личность на вкус, пользователи могут из терминала, похожего на приложение для Facebook. Social Shot проанализирует "лайки" из подключенного профиля и приготовит напиток, смешав ингредиенты в нужной пропорции. Доступен робот-бармен
-							пока только в Германии. <br></div>
-						<div class="news-item__back"><a class="news-item__back-link" href="#">← назад</a></div>
+					<div class="news-card">
+						<div class="news-card__layout container">
+							<div class="news-card__text"><img src="img/tmp/news/2.jpg" alt="">
+								<h3>Группа немецких инженеров изобрела робота-бармена, готовящего коктейли, состав которых максимально приближен к психотипу человека. В основе разработки лежит алгоритм психологов из Кембриджского университета, который способен составить детальный психологический портрет пользователя Facebook, основываясь лишь на его "лайках" в социальной сети.</h3>В сентябре британскими учеными был запущен сайт Apply Special Sauce, который, отталкиваясь от профиля в Facebook, может охарактеризовать ключевые особенности психотипа человека, степень удовлетворенности жизнью, выявить его религиозные, политические
+								и даже сексуальные предпочтения. <br><br>Более того, инструмент может попытаться угадать пол, образование и семейное положение, а также выстроить модель личности в соответствии с так называемой "большой пятеркой" индивидуальных черт (экстраверсия,
+								доброжелательность, добросовестность, нейротизм и открытость новому опыту). Эта модель позволяет определить, например, насколько импульсивен или сдержан, либерален или консервативен человек. <br><br>Взяв на вооружение опыт психологов, энтузиасты
+								из Германии создали робота Social Shot, который готовит напитки на основе "большой пятерки" личностных качеств человека. Нейротизм олицетворяет красный гранатовый сироп, экстраверсию — желтый лимонный сок, открытость — синий Кюрасао, доброжелательность
+								— зеленый базиликовый ликер, а добросовестность — чистая водка. "Мы хотели создать классный способ, чтобы люди могли визуализировать свою индивидуальность… и выпить ее!" — сказал один из разработчиков Social Shot Саймон Фрамбах.Заказать коктейль
+								и узнать, какова их личность на вкус, пользователи могут из терминала, похожего на приложение для Facebook. Social Shot проанализирует "лайки" из подключенного профиля и приготовит напиток, смешав ингредиенты в нужной пропорции. Доступен робот-бармен
+								пока только в Германии. <br></div>
+							<div class="news-card__back"><a class="back-button" href="#">← назад</a></div>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="bottom-line">
-				<div class="bottom-line__layout bottom-line__layout_container container">
-					<div class="bottom-line__layout bottom-line__layout_left">
+				<div class="bottom-line__layout container">
+					<div class="bottom-line__layout-left">
 						<div class="secondary-logo">
 							<a class="secondary-logo__link" href="#"><img class="secondary-logo__image" src="img/logo-small.png" /></a>
 						</div>
 					</div>
-					<div class="bottom-line__layout bottom-line__layout_right">
+					<div class="bottom-line__layout-right">
 						<div class="secondary-site-phone"><small>+7(8182)</small> 65-79-70, 65-79-80</div>
 					</div>
 				</div>
 			</div>
 			<div class="footer">
-				<div class="footer__layout footer__layout_container container">
-					<div class="footer__layout footer__layout_left">
-						<div class="footer__layout footer__layout_columns">
-							<div class="footer__layout footer__layout_column">
+				<div class="footer__layout container">
+					<div class="footer__layout-left">
+						<div class="footer__columns">
+							<div class="footer__column">
 								<h3 class="footer__title">Компания</h3>
 								<div class="secondary-navigation">
 									<ul class="secondary-navigation__list">
@@ -123,7 +129,7 @@
 									</ul>
 								</div>
 							</div>
-							<div class="footer__layout footer__layout_column">
+							<div class="footer__column">
 								<h3 class="footer__title">Реклама на радио</h3>
 								<div class="secondary-navigation">
 									<ul class="secondary-navigation__list">
@@ -140,7 +146,7 @@
 									</ul>
 								</div>
 							</div>
-							<div class="footer__layout footer__layout_column">
+							<div class="footer__column">
 								<h3 class="footer__title">Реклама на ТВ</h3>
 								<div class="secondary-navigation">
 									<ul class="secondary-navigation__list">
@@ -158,7 +164,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="footer__layout footer__layout_right">
+					<div class="footer__layout-right">
 						<h3 class="footer__title">Контакты</h3>
 						<div class="site-contacts">
 							<div class="site-contacts__list">
@@ -171,15 +177,23 @@
 				</div>
 			</div>
 			<div class="copyright">
-				<div class="copyright__layout copyright__layout_container container">
+				<div class="copyright__layout container">
 					<div class="copyright__text">© 2015 "МедиаЭКСПЕРТ" All Rights Reserved, site by <a href="http://leeft.ru/">Leeft</a></div>
 				</div>
+			</div>
+			<div class="callback-popup popup" id="callback-popup">
+				<div class="callback-popup__title">Введите ваш номер телефона</div>
+				<form class="callback-popup-form">
+					<div class="callback-popup-form__phone">+7<input class="callback-popup-form__input" type="text" /></div>
+					<div class="callback-popup-form__buttons"><input class="callback-popup-form__button" type="submit" value="Заказать звонок" /></div>
+				</form>
 			</div>
 		</div>
 		<script src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script src="bower_components/slick.js/slick/slick.min.js"></script>
 		<script src="bower_components/pxgradient/pxgradient-1.0.3.min.js"></script>
 		<script src="bower_components/jQuery.dotdotdot/src/jquery.dotdotdot.min.js"></script>
+		<script src="bower_components/fancybox/source/jquery.fancybox.pack.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>
 

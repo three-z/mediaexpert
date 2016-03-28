@@ -7,16 +7,17 @@
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&amp;subset=latin,latin-ext,cyrillic" />
 		<link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
 		<link rel="stylesheet" href="bower_components/slick.js/slick/slick.css" />
+		<link rel="stylesheet" href="bower_components/fancybox/source/jquery.fancybox.css" />
 		<link rel="stylesheet" href="css/styles.css" />
 	</head>
 
 	<body>
 		<div class="page">
 			<div class="top-line">
-				<div class="top-line__layout top-line__layout_container container">
-					<div class="top-line__layout top-line__layout_left">
+				<div class="top-line__layout container">
+					<div class="top-line__layout-left">
 						<h1 class="site-title">Медиа Эксперт Вашего Бизнеса</h1></div>
-					<div class="top-line__layout top-line__layout_right">
+					<div class="top-line__layout-right">
 						<div class="social-links">
 							<ul class="social-links__list">
 								<li class="social-links__item"><a class="social-links__link" href="#">В</a></li>
@@ -28,24 +29,24 @@
 				</div>
 			</div>
 			<div class="header">
-				<div class="header__layout header__layout_container container">
-					<div class="header__layout header__layout_left">
+				<div class="header__layout container">
+					<div class="header__layout-left">
 						<div class="logo">
 							<a class="logo__link" href="#"><img class="logo__image" src="img/logo.png" /></a>
 						</div>
 					</div>
-					<div class="header__layout header__layout_center">
+					<div class="header__layout-center">
 						<div class="site-address">г. Архангельск, ул. Попова, д. 6</div>
 						<div class="site-slogan">Производство и размещение аудио и видео роликов</div>
 					</div>
-					<div class="header__layout header__layout_right">
+					<div class="header__layout-right">
 						<div class="site-phone"><small>+7(8182)</small> 65-79-70, 65-79-80</div>
-						<div class="callback"><a class="callback__button" href="#">Заказать звонок</a></div>
+						<div class="callback"><a class="callback__button fancybox" href="#callback-popup">Заказать звонок</a></div>
 					</div>
 				</div>
 			</div>
 			<div class="navigation">
-				<div class="navigation__layout navigation__layout_container container container_no-padding">
+				<div class="navigation__layout container container_no-padding">
 					<ul class="navigation__list">
 						<li class="navigation__item navigation__item_active"><a class="navigation__link" href="#">Главная</a></li>
 						<li class="navigation__item"><a class="navigation__link" href="#">Компания</a></li>
@@ -65,19 +66,19 @@
 					</div>
 				</div>
 				<div class="home-advantages">
-					<div class="home-advantages__layout home-advantages__layout_container container">
-						<div class="home-advantages__layout home-advantages__layout_left">
-							<h2 class="home-advantages__title">Преимущества нашей компании</h2>
-							<ul class="home-advantages__list">
-								<li class="home-advantages__item home-advantages__item_exclusive">Эксклюзивное право <br>на размещение рекламы <br>на радио и ТВ <br></li>
-								<li class="home-advantages__item home-advantages__item_reputation">Надежность и отличная <br>репутация <br></li>
-								<li class="home-advantages__item home-advantages__item_service">Высокий уровень клиентского <br>сервиса, постоянное повышение <br>квалификации сотрудников <br>(тренинги, курсы, обмен опытом) <br></li>
-								<li class="home-advantages__item home-advantages__item_price">Гибкая ценовая <br>политика, <br>индивидуальный <br>подход <br></li>
-								<li class="home-advantages__item home-advantages__item_advertising">Планирование рекламных <br>компаний, оптимально <br>соответствующих <br>бюджету Клиента <br></li>
-								<li class="home-advantages__item home-advantages__item_creative">Оригинальный творческий подход <br>к решению рекламных задач <br>Клиента. <br></li>
-							</ul>
+					<div class="home-advantages__layout container">
+						<div class="home-advantages__layout-left">
+							<div class="home-advantages__title">Преимущества нашей компании</div>
+							<div class="home-advantages__list">
+								<div class="home-advantages__item home-advantages__item_exclusive">Эксклюзивное право <br>на размещение рекламы <br>на радио и ТВ <br></div>
+								<div class="home-advantages__item home-advantages__item_reputation">Надежность и отличная <br>репутация <br></div>
+								<div class="home-advantages__item home-advantages__item_service">Высокий уровень клиентского <br>сервиса, постоянное повышение <br>квалификации сотрудников <br>(тренинги, курсы, обмен опытом) <br></div>
+								<div class="home-advantages__item home-advantages__item_price">Гибкая ценовая <br>политика, <br>индивидуальный <br>подход <br></div>
+								<div class="home-advantages__item home-advantages__item_advertising">Планирование рекламных <br>компаний, оптимально <br>соответствующих <br>бюджету Клиента <br></div>
+								<div class="home-advantages__item home-advantages__item_creative">Оригинальный творческий подход <br>к решению рекламных задач <br>Клиента. <br></div>
+							</div>
 						</div>
-						<div class="home-advantages__layout home-advantages__layout_right">
+						<div class="home-advantages__layout-right">
 							<div class="home-banner">
 								<a class="home-banner__link" href="#"><img class="home-banner__image" src="img/tmp/banners/1.jpg" /></a>
 							</div>
@@ -85,19 +86,15 @@
 					</div>
 				</div>
 				<div class="home-on-tv">
-					<div class="home-on-tv__info">
-						<div class="home-on-tv__layout home-on-tv__layout_container container">
-							<div class="home-on-tv__layout home-on-tv__layout_left">
-								<h2 class="home-on-tv__title js-gradient">Реклама</h2>
+					<div class="home-on-tv__layout container">
+						<div class="home-on-tv__info">
+							<div class="home-on-tv__headers">
+								<div class="home-on-tv__title js-gradient">Реклама</div>
 								<div class="home-on-tv__sub-title">на ТЕЛЕВИДЕНИИ</div>
 							</div>
-							<div class="home-on-tv__layout home-on-tv__layout_right">
-								<div class="home-on-tv__description">Огромный опыт работы с телеканалами, большой объем размещения и низкий проценткомиссии, - все это позволяет предлагать нашим клиентам оптимальные цены наразмещение ТВ рекламы.</div>
-							</div>
+							<div class="home-on-tv__description">Огромный опыт работы с телеканалами, большой объем размещения и низкий проценткомиссии, - все это позволяет предлагать нашим клиентам оптимальные цены наразмещение ТВ рекламы.</div>
 						</div>
-					</div>
-					<div class="on-tv-slider">
-						<div class="on-tv-slider__layout on-tv-slider__layout_container container">
+						<div class="on-tv-slider">
 							<div class="on-tv-slider__list">
 								<div class="on-tv-slider__item">
 									<div class="on-tv-slider__thumb"><img class="on-tv-slider__image" src="img/tmp/on-tv/1.png" /></div>
@@ -134,19 +131,15 @@
 					</div>
 				</div>
 				<div class="home-on-radio">
-					<div class="home-on-radio__info">
-						<div class="home-on-radio__layout home-on-radio__layout_container container">
-							<div class="home-on-radio__layout home-on-radio__layout_left">
-								<h2 class="home-on-radio__title">Реклама</h2>
+					<div class="home-on-radio__layout container">
+						<div class="home-on-radio__info">
+							<div class="home-on-radio__headers">
+								<div class="home-on-radio__title">Реклама</div>
 								<div class="home-on-radio__sub-title">на РАДИО</div>
 							</div>
-							<div class="home-on-radio__layout home-on-radio__layout_right">
-								<div class="home-on-radio__description">Длительный опыт работы с радиостанциями, большой объем размещения и низкий процентагентского вознаграждения позволяет предлагать нашим клиентам оптимальные цены наразмещение рекламы на радио.</div>
-							</div>
+							<div class="home-on-radio__description">Длительный опыт работы с радиостанциями, большой объем размещения и низкий процентагентского вознаграждения позволяет предлагать нашим клиентам оптимальные цены наразмещение рекламы на радио.</div>
 						</div>
-					</div>
-					<div class="on-radio-slider">
-						<div class="on-radio-slider__layout on-radio-slider__layout_container container">
+						<div class="on-radio-slider">
 							<div class="on-radio-slider__list">
 								<div class="on-radio-slider__item">
 									<div class="on-radio-slider__thumb"><img class="on-radio-slider__image" src="img/tmp/on-radio/1.png" /></div>
@@ -193,8 +186,8 @@
 					</div>
 				</div>
 				<div class="last-news">
-					<div class="last-news__layout last-news__layout_container container">
-						<h2 class="last-news__title js-gradient">Новости</h2>
+					<div class="last-news__layout container">
+						<div class="last-news__title js-gradient">Новости</div>
 						<div class="last-news-slider">
 							<div class="last-news-slider__list">
 								<div class="last-news-slider__item">
@@ -230,8 +223,8 @@
 					</div>
 				</div>
 				<div class="clients">
-					<div class="clients__layout clients__layout_container container">
-						<h2 class="clients__title js-gradient">Наши клиенты</h2>
+					<div class="clients__layout container">
+						<div class="clients__title js-gradient">Наши клиенты</div>
 						<div class="clients-slider">
 							<div class="clients-slider__list">
 								<div class="clients-slider__item">
@@ -270,22 +263,22 @@
 				</div>
 			</div>
 			<div class="bottom-line">
-				<div class="bottom-line__layout bottom-line__layout_container container">
-					<div class="bottom-line__layout bottom-line__layout_left">
+				<div class="bottom-line__layout container">
+					<div class="bottom-line__layout-left">
 						<div class="secondary-logo">
 							<a class="secondary-logo__link" href="#"><img class="secondary-logo__image" src="img/logo-small.png" /></a>
 						</div>
 					</div>
-					<div class="bottom-line__layout bottom-line__layout_right">
+					<div class="bottom-line__layout-right">
 						<div class="secondary-site-phone"><small>+7(8182)</small> 65-79-70, 65-79-80</div>
 					</div>
 				</div>
 			</div>
 			<div class="footer">
-				<div class="footer__layout footer__layout_container container">
-					<div class="footer__layout footer__layout_left">
-						<div class="footer__layout footer__layout_columns">
-							<div class="footer__layout footer__layout_column">
+				<div class="footer__layout container">
+					<div class="footer__layout-left">
+						<div class="footer__columns">
+							<div class="footer__column">
 								<h3 class="footer__title">Компания</h3>
 								<div class="secondary-navigation">
 									<ul class="secondary-navigation__list">
@@ -299,7 +292,7 @@
 									</ul>
 								</div>
 							</div>
-							<div class="footer__layout footer__layout_column">
+							<div class="footer__column">
 								<h3 class="footer__title">Реклама на радио</h3>
 								<div class="secondary-navigation">
 									<ul class="secondary-navigation__list">
@@ -316,7 +309,7 @@
 									</ul>
 								</div>
 							</div>
-							<div class="footer__layout footer__layout_column">
+							<div class="footer__column">
 								<h3 class="footer__title">Реклама на ТВ</h3>
 								<div class="secondary-navigation">
 									<ul class="secondary-navigation__list">
@@ -334,7 +327,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="footer__layout footer__layout_right">
+					<div class="footer__layout-right">
 						<h3 class="footer__title">Контакты</h3>
 						<div class="site-contacts">
 							<div class="site-contacts__list">
@@ -347,15 +340,23 @@
 				</div>
 			</div>
 			<div class="copyright">
-				<div class="copyright__layout copyright__layout_container container">
+				<div class="copyright__layout container">
 					<div class="copyright__text">© 2015 "МедиаЭКСПЕРТ" All Rights Reserved, site by <a href="http://leeft.ru/">Leeft</a></div>
 				</div>
+			</div>
+			<div class="callback-popup popup" id="callback-popup">
+				<div class="callback-popup__title">Введите ваш номер телефона</div>
+				<form class="callback-popup-form">
+					<div class="callback-popup-form__phone">+7<input class="callback-popup-form__input" type="text" /></div>
+					<div class="callback-popup-form__buttons"><input class="callback-popup-form__button" type="submit" value="Заказать звонок" /></div>
+				</form>
 			</div>
 		</div>
 		<script src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script src="bower_components/slick.js/slick/slick.min.js"></script>
 		<script src="bower_components/pxgradient/pxgradient-1.0.3.min.js"></script>
 		<script src="bower_components/jQuery.dotdotdot/src/jquery.dotdotdot.min.js"></script>
+		<script src="bower_components/fancybox/source/jquery.fancybox.pack.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>
 
