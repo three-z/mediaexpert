@@ -1,6 +1,4 @@
 block('template-popups').replace()(function() {
-	var ctx = this.ctx;
-
 	return [
 		{
 			block: 'callback-popup',
@@ -47,8 +45,6 @@ block('template-popups').replace()(function() {
 });
 
 block('template-page-title').replace()(function() {
-	var ctx = this.ctx;
-
 	return [
 		{
 			block: 'page-title',
@@ -64,7 +60,7 @@ block('template-page-title').replace()(function() {
 							elem : 'text',
 							tag: 'h2',
 							cls: 'js-gradient',
-							content : ctx.title
+							content : this.ctx.title
 						}
 					]
 				}
@@ -74,8 +70,6 @@ block('template-page-title').replace()(function() {
 });
 
 block('template-request-form').replace()(function() {
-	var ctx = this.ctx;
-
 	return [
 		{
 			block: 'request-form',
@@ -119,8 +113,6 @@ block('template-request-form').replace()(function() {
 });
 
 block('template-breadcrumbs').replace()(function() {
-	var ctx = this.ctx;
-
 	return [
 		{
 			block: 'breadcrumbs',
@@ -155,8 +147,6 @@ block('template-breadcrumbs').replace()(function() {
 });
 
 block('template-last-reclam').replace()(function() {
-	var ctx = this.ctx;
-
 	return [
 		{
 			block: 'last-reclam',
@@ -173,70 +163,39 @@ block('template-last-reclam').replace()(function() {
 							block: 'last-reclam-slider',
 							content: [
 								{
-									block: 'last-reclam-slider-item',
-									content: [
-										{
-											elem: 'link',
-											tag: 'a',
-											attrs: { href: '#' },
-											content: [
-												{
-													tag: 'img',
-													attrs: { src: 'img/tmp/video/1.jpg' },
-												}
-											]
-										}
-									]
+									url: '#',
+									thumb: 'img/tmp/video/1.jpg'
 								},
 								{
-									block: 'last-reclam-slider-item',
-									content: [
-										{
-											elem: 'link',
-											tag: 'a',
-											attrs: { href: '#' },
-											content: [
-												{
-													tag: 'img',
-													attrs: { src: 'img/tmp/video/2.jpg' },
-												}
-											]
-										}
-									]
+									url: '#',
+									thumb: 'img/tmp/video/2.jpg'
 								},
 								{
-									block: 'last-reclam-slider-item',
-									content: [
-										{
-											elem: 'link',
-											tag: 'a',
-											attrs: { href: '#' },
-											content: [
-												{
-													tag: 'img',
-													attrs: { src: 'img/tmp/video/1.jpg' },
-												}
-											]
-										}
-									]
+									url: '#',
+									thumb: 'img/tmp/video/1.jpg'
 								},
 								{
-									block: 'last-reclam-slider-item',
-									content: [
-										{
-											elem: 'link',
-											tag: 'a',
-											attrs: { href: '#' },
-											content: [
-												{
-													tag: 'img',
-													attrs: { src: 'img/tmp/video/2.jpg' },
-												}
-											]
-										}
-									]
+									url: '#',
+									thumb: 'img/tmp/video/2.jpg'
 								}
-							]
+							].map(function(item) {
+								return {
+									block: 'last-reclam-slider-item',
+									content: [
+										{
+											elem: 'link',
+											tag: 'a',
+											attrs: { href: item.url },
+											content: [
+												{
+													tag: 'img',
+													attrs: { src: item.thumb },
+												}
+											]
+										}
+									]
+								};
+							})
 						},
 						{
 							elem: 'other',
@@ -256,8 +215,6 @@ block('template-last-reclam').replace()(function() {
 });
 
 block('template-last-news').replace()(function() {
-	var ctx = this.ctx;
-
 	return [
 		{
 			block: 'template-page-title',
@@ -275,208 +232,85 @@ block('template-last-news').replace()(function() {
 							block: 'news-list',
 							content: [
 								{
-									block: 'news-list-item',
-									content: [
-										{
-											elem: 'thumb',
-											content: [
-												{
-													tag: 'img',
-													attrs: { src: 'img/tmp/last-news/1.png' },
-												}
-											]
-										},
-										{
-											elem: 'info',
-											content: [
-												{
-													elem: 'title',
-													cls: 'js-dotted',
-													content: [
-														{
-															tag: 'a',
-															attrs: { href: '#' },
-															content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-														}
-													]
-												},
-												{
-													elem: 'date',
-													content: '10.12.15'
-												},
-												{
-													elem: 'text',
-													cls: 'js-dotted',
-													content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-												},
-												{
-													elem: 'more',
-													content: [
-														{
-															block: 'more-button',
-															tag: 'a',
-															attrs: { href: '#' },
-															content: 'подробнее'
-														}
-													]
-												}
-											]
-										}
-									]
+									url: '#',
+									thumb: 'img/tmp/last-news/1.png',
+									title: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.',
+									date: '10.12.15',
+									text: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
 								},
 								{
-									block: 'news-list-item',
-									content: [
-										{
-											elem: 'thumb',
-											content: [
-												{
-													tag: 'img',
-													attrs: { src: 'img/tmp/last-news/1.png' },
-												}
-											]
-										},
-										{
-											elem: 'info',
-											content: [
-												{
-													elem: 'title',
-													cls: 'js-dotted',
-													content: [
-														{
-															tag: 'a',
-															attrs: { href: '#' },
-															content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-														}
-													]
-												},
-												{
-													elem: 'date',
-													content: '10.12.15'
-												},
-												{
-													elem: 'text',
-													cls: 'js-dotted',
-													content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-												},
-												{
-													elem: 'more',
-													content: [
-														{
-															block: 'more-button',
-															tag: 'a',
-															attrs: { href: '#' },
-															content: 'подробнее'
-														}
-													]
-												}
-											]
-										}
-									]
+									url: '#',
+									thumb: 'img/tmp/last-news/1.png',
+									title: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.',
+									date: '10.12.15',
+									text: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
 								},
 								{
-									block: 'news-list-item',
-									content: [
-										{
-											elem: 'thumb',
-											content: [
-												{
-													elem: 'image',
-													tag: 'img',
-													attrs: { src: 'img/tmp/last-news/1.png' },
-												}
-											]
-										},
-										{
-											elem: 'info',
-											content: [
-												{
-													elem: 'title',
-													cls: 'js-dotted',
-													content: [
-														{
-															tag: 'a',
-															attrs: { href: '#' },
-															content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-														}
-													]
-												},
-												{
-													elem: 'date',
-													content: '10.12.15'
-												},
-												{
-													elem: 'text',
-													cls: 'js-dotted',
-													content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-												},
-												{
-													elem: 'more',
-													content: [
-														{
-															block: 'more-button',
-															tag: 'a',
-															attrs: { href: '#' },
-															content: 'подробнее'
-														}
-													]
-												}
-											]
-										}
-									]
+									url: '#',
+									thumb: 'img/tmp/last-news/1.png',
+									title: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.',
+									date: '10.12.15',
+									text: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
 								},
 								{
-									block: 'news-list-item',
-									content: [
-										{
-											elem: 'thumb',
-											content: [
-												{
-													elem: 'image',
-													tag: 'img',
-													attrs: { src: 'img/tmp/last-news/1.png' },
-												}
-											]
-										},
-										{
-											elem: 'info',
-											content: [
-												{
-													elem: 'title',
-													cls: 'js-dotted',
-													content: [
-														{
-															tag: 'a',
-															attrs: { href: '#' },
-															content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-														}
-													]
-												},
-												{
-													elem: 'date',
-													content: '10.12.15'
-												},
-												{
-													elem: 'text',
-													cls: 'js-dotted',
-													content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-												},
-												{
-													elem: 'more',
-													content: [
-														{
-															block: 'more-button',
-															tag: 'a',
-															attrs: { href: '#' },
-															content: 'подробнее'
-														}
-													]
-												}
-											]
-										}
-									]
+									url: '#',
+									thumb: 'img/tmp/last-news/1.png',
+									title: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.',
+									date: '10.12.15',
+									text: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
 								}
-							]
+							].map(function(item) {
+								return {
+									block: 'news-list-item',
+									content: [
+										{
+											elem: 'thumb',
+											content: [
+												{
+													tag: 'img',
+													attrs: { src: 'img/tmp/last-news/1.png' },
+												}
+											]
+										},
+										{
+											elem: 'info',
+											content: [
+												{
+													elem: 'title',
+													cls: 'js-dotted',
+													content: [
+														{
+															tag: 'a',
+															attrs: { href: item.url },
+															content: item.title
+														}
+													]
+												},
+												{
+													elem: 'date',
+													content: item.date
+												},
+												{
+													elem: 'text',
+													cls: 'js-dotted',
+													content: item.text
+												},
+												{
+													elem: 'more',
+													content: [
+														{
+															block: 'more-button',
+															tag: 'a',
+															attrs: { href: item.url },
+															content: 'подробнее'
+														}
+													]
+												}
+											]
+										}
+									]
+								};
+							})
 						},
 						{
 							elem: 'other',
@@ -496,8 +330,6 @@ block('template-last-news').replace()(function() {
 });
 
 block('template-clients').replace()(function() {
-	var ctx = this.ctx;
-
 	return [
 		{
 			block: 'template-page-title',
@@ -670,6 +502,14 @@ block('secondary-navigation').elem('list')(
 );
 
 block('secondary-navigation').elem('item')(
+    tag()('li')
+);
+
+block('site-contacts').elem('list')(
+    tag()('ul')
+);
+
+block('site-contacts').elem('item')(
     tag()('li')
 );
 

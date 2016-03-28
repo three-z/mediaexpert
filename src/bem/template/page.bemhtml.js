@@ -1,6 +1,4 @@
 block('template-page').replace()(function() {
-	var ctx = this.ctx;
-
 	return [
 		'<!DOCTYPE html>',
 		{
@@ -15,7 +13,7 @@ block('template-page').replace()(function() {
 						},
 						{
 							tag: 'title',
-							content: ctx.title
+							content: this.ctx.title
 						},
 						{
 							tag: 'link',
@@ -49,7 +47,7 @@ block('template-page').replace()(function() {
 								{
 									block: 'template-header'
 								},
-								ctx.content,
+								this.ctx.content,
 								{
 									block: 'template-footer'
 								},

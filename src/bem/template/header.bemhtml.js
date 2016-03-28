@@ -1,6 +1,4 @@
 block('template-header').replace()(function() {
-	var ctx = this.ctx;
-
 	return [
 		{
 			block: 'top-line',

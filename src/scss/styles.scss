@@ -1705,6 +1705,10 @@ a {
 	margin: 20px 30px 0 30px;
 	text-align: center;
 
+	a {
+		text-decoration: none;
+	}
+
 	&__thumb {
 		overflow: hidden;
 		height: 137px;
@@ -1779,6 +1783,10 @@ a {
 	width: 207px;
 	margin: 20px 19px 0 19px;
 	text-align: center;
+
+	a {
+		text-decoration: none;
+	}
 
 	&__thumb {
 		overflow: hidden;

@@ -37,226 +37,95 @@
 									block: 'tv-list',
 									content: [
 										{
-											block: 'tv-list-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-tv/1.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на телевидении'
-												},
-												{
-													elem: 'sub-title',
-													content: 'ПЕРВЫЙ'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-tv/1.png',
+											title: 'реклама на телевидении',
+											subtitle: 'ПЕРВЫЙ',
 										},
 										{
-											block: 'tv-list-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-tv/2.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на телевидении'
-												},
-												{
-													elem: 'sub-title',
-													content: 'РОССИЯ'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-tv/2.png',
+											title: 'реклама на телевидении',
+											subtitle: 'РОССИЯ',
 										},
 										{
-											block: 'tv-list-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-tv/1.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на телевидении'
-												},
-												{
-													elem: 'sub-title',
-													content: 'ПЕРВЫЙ'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-tv/1.png',
+											title: 'реклама на телевидении',
+											subtitle: 'ПЕРВЫЙ',
 										},
 										{
-											block: 'tv-list-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-tv/2.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на телевидении'
-												},
-												{
-													elem: 'sub-title',
-													content: 'РОССИЯ'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-tv/2.png',
+											title: 'реклама на телевидении',
+											subtitle: 'РОССИЯ',
 										},
 										{
-											block: 'tv-list-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-tv/1.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на телевидении'
-												},
-												{
-													elem: 'sub-title',
-													content: 'ПЕРВЫЙ'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-tv/1.png',
+											title: 'реклама на телевидении',
+											subtitle: 'ПЕРВЫЙ',
 										},
 										{
-											block: 'tv-list-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-tv/2.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на телевидении'
-												},
-												{
-													elem: 'sub-title',
-													content: 'РОССИЯ'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-tv/2.png',
+											title: 'реклама на телевидении',
+											subtitle: 'РОССИЯ',
 										},
 										{
-											block: 'tv-list-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-tv/1.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на телевидении'
-												},
-												{
-													elem: 'sub-title',
-													content: 'ПЕРВЫЙ'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-tv/1.png',
+											title: 'реклама на телевидении',
+											subtitle: 'ПЕРВЫЙ',
 										},
 										{
-											block: 'tv-list-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-tv/2.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на телевидении'
-												},
-												{
-													elem: 'sub-title',
-													content: 'РОССИЯ'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-tv/2.png',
+											title: 'реклама на телевидении',
+											subtitle: 'РОССИЯ',
 										},
 										{
-											block: 'tv-list-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-tv/2.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на телевидении'
-												},
-												{
-													elem: 'sub-title',
-													content: 'РОССИЯ'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-tv/1.png',
+											title: 'реклама на телевидении',
+											subtitle: 'ПЕРВЫЙ',
 										},
 										{
-											block: 'tv-list-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-tv/2.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на телевидении'
-												},
-												{
-													elem: 'sub-title',
-													content: 'РОССИЯ'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-tv/2.png',
+											title: 'реклама на телевидении',
+											subtitle: 'РОССИЯ',
 										}
-									]
+									].map(function(item) {
+										return {
+											block: 'tv-list-item',
+											content: [
+												{
+													tag: 'a',
+													attrs: { href: item.url },
+													content : [
+														{
+															elem: 'thumb',
+															content: [
+																{
+																	tag: 'img',
+																	attrs: { src: item.thumb },
+																}
+															]
+														},
+														{
+															elem: 'title',
+															content: item.title
+														},
+														{
+															elem: 'sub-title',
+															content: item.subtitle
+														}
+													]
+												}
+											]
+										};
+									})
 								}
 							]
 						}

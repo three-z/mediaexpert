@@ -23,11 +23,11 @@ var paths = {
 	src: {
 		bemjson: 'src/bem/*.bemjson.js',
 		bemhtml: 'src/bem/**/[^_]*.bemhtml.js',
-		style: 'src/sass/*.scss'
+		style: 'src/scss/*.scss'
 	},
 	watch: {
 		bem: 'src/bem/**/[^_]*.js',
-		style: 'src/sass/**/*.scss'
+		style: 'src/scss/**/*.scss'
 	}
 };
 

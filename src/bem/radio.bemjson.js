@@ -37,226 +37,95 @@
 									block: 'radio-list',
 									content: [
 										{
-											block: 'radio-list-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-radio/1.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на радиостанции'
-												},
-												{
-													elem: 'sub-title',
-													content: 'Европа Плюс'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-radio/1.png',
+											title: 'реклама на радиостанции',
+											subtitle: 'Европа Плюс',
 										},
 										{
-											block: 'radio-list-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-radio/2.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на радиостанции'
-												},
-												{
-													elem: 'sub-title',
-													content: 'Русское Радио'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-radio/2.png',
+											title: 'реклама на радиостанции',
+											subtitle: 'Русское Радио',
 										},
 										{
-											block: 'radio-list-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-radio/1.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на радиостанции'
-												},
-												{
-													elem: 'sub-title',
-													content: 'Европа Плюс'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-radio/1.png',
+											title: 'реклама на радиостанции',
+											subtitle: 'Европа Плюс',
 										},
 										{
-											block: 'radio-list-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-radio/2.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на радиостанции'
-												},
-												{
-													elem: 'sub-title',
-													content: 'Русское Радио'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-radio/2.png',
+											title: 'реклама на радиостанции',
+											subtitle: 'Русское Радио',
 										},
 										{
-											block: 'radio-list-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-radio/1.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на радиостанции'
-												},
-												{
-													elem: 'sub-title',
-													content: 'Европа Плюс'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-radio/1.png',
+											title: 'реклама на радиостанции',
+											subtitle: 'Европа Плюс',
 										},
 										{
-											block: 'radio-list-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-radio/2.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на радиостанции'
-												},
-												{
-													elem: 'sub-title',
-													content: 'Русское Радио'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-radio/2.png',
+											title: 'реклама на радиостанции',
+											subtitle: 'Русское Радио',
 										},
 										{
-											block: 'radio-list-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-radio/1.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на радиостанции'
-												},
-												{
-													elem: 'sub-title',
-													content: 'Европа Плюс'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-radio/1.png',
+											title: 'реклама на радиостанции',
+											subtitle: 'Европа Плюс',
 										},
 										{
-											block: 'radio-list-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-radio/2.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на радиостанции'
-												},
-												{
-													elem: 'sub-title',
-													content: 'Русское Радио'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-radio/2.png',
+											title: 'реклама на радиостанции',
+											subtitle: 'Русское Радио',
 										},
 										{
-											block: 'radio-list-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-radio/1.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на радиостанции'
-												},
-												{
-													elem: 'sub-title',
-													content: 'Европа Плюс'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-radio/1.png',
+											title: 'реклама на радиостанции',
+											subtitle: 'Европа Плюс',
 										},
 										{
-											block: 'radio-list-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-radio/2.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на радиостанции'
-												},
-												{
-													elem: 'sub-title',
-													content: 'Русское Радио'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-radio/2.png',
+											title: 'реклама на радиостанции',
+											subtitle: 'Русское Радио',
 										}
-									]
+									].map(function(item) {
+										return {
+											block: 'radio-list-item',
+											content: [
+												{
+													tag: 'a',
+													attrs: { href: item.url },
+													content : [
+														{
+															elem: 'thumb',
+															content: [
+																{
+																	tag: 'img',
+																	attrs: { src: item.thumb },
+																}
+															]
+														},
+														{
+															elem: 'title',
+															content: item.title
+														},
+														{
+															elem: 'sub-title',
+															content: item.subtitle
+														}
+													]
+												}
+											]
+										};
+									})
 								}
 							]
 						}

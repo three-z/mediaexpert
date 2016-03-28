@@ -1,6 +1,4 @@
 block('template-footer').replace()(function() {
-	var ctx = this.ctx;
-
 	return [
 		{
 			block: 'bottom-line',

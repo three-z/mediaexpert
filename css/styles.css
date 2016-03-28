@@ -1918,6 +1918,8 @@ a {
   width: 182px;
   margin: 20px 30px 0 30px;
   text-align: center; }
+  .tv-list-item a {
+    text-decoration: none; }
   .tv-list-item__thumb {
     overflow: hidden;
     height: 137px;
@@ -2018,6 +2020,8 @@ a {
   width: 207px;
   margin: 20px 19px 0 19px;
   text-align: center; }
+  .radio-list-item a {
+    text-decoration: none; }
   .radio-list-item__thumb {
     overflow: hidden;
     width: 207px;
