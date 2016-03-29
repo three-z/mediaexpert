@@ -2493,6 +2493,7 @@ a {
 
 .request-popup-form {
 	@include null-block;
+	padding: 20px 20px 0 20px;
 
 	&__label {
 		@include null-block;
@@ -2567,5 +2568,4 @@ a {
 			opacity: .8;
 		}
 	}
-	padding: 20px 20px 0 20px;
 }
