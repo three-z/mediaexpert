@@ -164,7 +164,7 @@ block('template-request-form').replace()(function() {
 						{
 							tag: 'input',
 							elem: 'button',
-							attrs: { type: 'submit', placeholder: 'Отправить' }
+							attrs: { type: 'submit', value: 'Отправить' }
 						}
 					]
 				}

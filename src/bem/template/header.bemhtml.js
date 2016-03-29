@@ -116,7 +116,7 @@ block('template-header').replace()(function() {
 							content: [
 								{
 									block: 'site-phone',
-									content: '<small>+7(8182)</small> 65-79-70, 65-79-80'
+									content: '<small>+7(8182)</small> 65-79-70, 65-79-80, 65-79-87'
 								},
 								{
 									block: 'callback',

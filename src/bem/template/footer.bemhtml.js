@@ -34,7 +34,7 @@ block('template-footer').replace()(function() {
 							content: [
 								{
 									block: 'secondary-site-phone',
-									content: '<small>+7(8182)</small> 65-79-70, 65-79-80'
+									content: '<small>+7(8182)</small> 65-79-70, 65-79-80, 65-79-87'
 								}
 							]
 						}
@@ -418,7 +418,7 @@ block('template-footer').replace()(function() {
 												{
 													elem: 'item',
 													mods: { 'address': true },
-													content: 'г. Архангельск, ул. Попова, д. 6.'
+													content: 'г. Архангельск, ул. Попова, д. 6, 3 этаж'
 												},
 												{
 													elem: 'item',
@@ -434,7 +434,7 @@ block('template-footer').replace()(function() {
 												{
 													elem: 'item',
 													mods: { 'phone': true },
-													content: '+7 (8182) 65-79-70; 65-79-80'
+													content: '+7 (8182) 65-79-70; 65-79-80; 65-79-87'
 												}
 											]
 										}

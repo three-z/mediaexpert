@@ -2070,6 +2070,7 @@ a {
 	&__attach {
 		float: left;
 		position: relative;
+		overflow: hidden;
 	}
 
 	&__attach &__input {
@@ -2105,7 +2106,7 @@ a {
 			cursor: pointer;
 			opacity: 0;
 			filter: alpha(opacity=0);
-			z-index: 1;
+			z-index: 2;
 		}
 	}
 }
@@ -2216,7 +2217,7 @@ a {
 
 	&__info {
 		position: absolute;
-		width: 252px;
+		width: 280px;
 		background: #0c385d;
 		border-radius: 5px;
 		color: #FFF;

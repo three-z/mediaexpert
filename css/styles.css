@@ -2314,7 +2314,8 @@ a {
       opacity: .8; }
   .vacancies-form__attach {
     float: left;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
   .vacancies-form__attach .vacancies-form__input {
     width: 381px;
     padding-right: 100px; }
@@ -2372,7 +2373,7 @@ a {
       cursor: pointer;
       opacity: 0;
       filter: alpha(opacity=0);
-      z-index: 1; }
+      z-index: 2; }
 
 .licenses {
   margin-top: 14px; }
@@ -2522,7 +2523,7 @@ a {
   position: relative; }
   .contacts__info {
     position: absolute;
-    width: 252px;
+    width: 280px;
     background: #0c385d;
     border-radius: 5px;
     color: #FFF;

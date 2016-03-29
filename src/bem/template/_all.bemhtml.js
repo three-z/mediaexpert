@@ -164,7 +164,7 @@ block('template-request-form').replace()(function() {
 						{
 							tag: 'input',
 							elem: 'button',
-							attrs: { type: 'submit', placeholder: 'Отправить' }
+							attrs: { type: 'submit', value: 'Отправить' }
 						}
 					]
 				}
@@ -559,7 +559,7 @@ block('template-footer').replace()(function() {
 							content: [
 								{
 									block: 'secondary-site-phone',
-									content: '<small>+7(8182)</small> 65-79-70, 65-79-80'
+									content: '<small>+7(8182)</small> 65-79-70, 65-79-80, 65-79-87'
 								}
 							]
 						}
@@ -943,7 +943,7 @@ block('template-footer').replace()(function() {
 												{
 													elem: 'item',
 													mods: { 'address': true },
-													content: 'г. Архангельск, ул. Попова, д. 6.'
+													content: 'г. Архангельск, ул. Попова, д. 6, 3 этаж'
 												},
 												{
 													elem: 'item',
@@ -959,7 +959,7 @@ block('template-footer').replace()(function() {
 												{
 													elem: 'item',
 													mods: { 'phone': true },
-													content: '+7 (8182) 65-79-70; 65-79-80'
+													content: '+7 (8182) 65-79-70; 65-79-80; 65-79-87'
 												}
 											]
 										}
@@ -1106,7 +1106,7 @@ block('template-header').replace()(function() {
 							content: [
 								{
 									block: 'site-phone',
-									content: '<small>+7(8182)</small> 65-79-70, 65-79-80'
+									content: '<small>+7(8182)</small> 65-79-70, 65-79-80, 65-79-87'
 								},
 								{
 									block: 'callback',

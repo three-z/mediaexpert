@@ -46,7 +46,7 @@
 												{
 													elem: 'address',
 													tag: 'span',
-													content: 'г.Архангельск, ул.Попова, д.6 <br><br>'
+													content: 'г.Архангельск, ул.Попова, д.6, 3 этаж <br><br>'
 												},
 												{
 													tag: '',
@@ -64,7 +64,16 @@
 												{
 													elem: 'phone',
 													tag: 'strong',
-													content: '(8182) 65-79-80'
+													content: '(8182) 65-79-80 <br>'
+												},
+												{
+													tag: '',
+													content: 'ТЕЛЕФОН ПРИЕМНОЙ '
+												},
+												{
+													elem: 'phone',
+													tag: 'strong',
+													content: '(8182) 65-79-87'
 												},
 												{
 													block : 'contacts-form',
@@ -135,11 +144,11 @@
 									content : [
 										{
 											tag: '',
-											content: 'г. Архангельск, ул. Попова, д. 6 <br>'
+											content: 'г. Архангельск, ул. Попова, д. 6, 3 этаж <br>'
 										},
 										{
 											tag: '',
-											content: '+7 (8182) 65-79-70 ; 65-79-80 <br>'
+											content: '+7 (8182) 65-79-70 ; 65-79-80; 65-79-87<br>'
 										},
 										{
 											tag: 'a',
