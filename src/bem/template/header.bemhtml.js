@@ -56,8 +56,9 @@ block('template-header').replace()(function() {
 									content: [
 										{
 											elem: 'button',
+											cls: 'fancybox',
 											tag: 'a',
-											attrs: { href: '#' },
+											attrs: { href: '#request-popup' },
 											content: 'Оставить заявку'
 										}
 									]

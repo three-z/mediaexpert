@@ -24,7 +24,7 @@
 								<div class="social-links__item"><a class="social-links__link" href="#">f</a></div>
 							</div>
 						</div>
-						<div class="leave-request"><a class="leave-request__button" href="#">Оставить заявку</a></div>
+						<div class="leave-request"><a class="leave-request__button fancybox" href="#request-popup">Оставить заявку</a></div>
 					</div>
 				</div>
 			</div>
@@ -220,11 +220,17 @@
 				</div>
 				<div class="page-title page-title_underline">
 					<div class="page-title__layout container">
-						<h2 class="page-title__text js-gradient">Наши клиенты</h2></div>
+						<h2 class="page-title__text js-gradient">Наши&nbsp;клиенты</h2></div>
 				</div>
 				<div class="clients">
 					<div class="clients__layout container">
 						<div class="clients-slider">
+							<div class="clients-slider-item">
+								<a href="#"><img src="img/tmp/clients/1.png" /></a>
+							</div>
+							<div class="clients-slider-item">
+								<a href="#"><img src="img/tmp/clients/2.png" /></a>
+							</div>
 							<div class="clients-slider-item">
 								<a href="#"><img src="img/tmp/clients/1.png" /></a>
 							</div>
@@ -340,6 +346,13 @@
 				<form class="callback-popup-form">
 					<div class="callback-popup-form__phone">+7<input class="callback-popup-form__input" type="text" /></div>
 					<div class="callback-popup-form__buttons"><input class="callback-popup-form__button" type="submit" value="Заказать звонок" /></div>
+				</form>
+			</div>
+			<div class="request-popup popup" id="request-popup">
+				<div class="request-popup__title">Оставить заявку</div>
+				<form class="request-popup-form"><label class="request-popup-form__label">Ваше имя</label><input class="request-popup-form__input" type="text" /><label class="request-popup-form__label">Комментарий</label><textarea class="request-popup-form__text"></textarea>
+					<div class="request-popup-form__phone">+7<input class="request-popup-form__input" type="text" /></div>
+					<div class="request-popup-form__buttons"><input class="request-popup-form__button" type="submit" value="Оставить заявку" /></div>
 				</form>
 			</div>
 		</div>

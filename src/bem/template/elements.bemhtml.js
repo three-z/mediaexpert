@@ -40,6 +40,67 @@ block('template-popups').replace()(function() {
 					]
 				}
 			]
+		},
+		{
+			block: 'request-popup',
+			attrs: { 'id': 'request-popup' },
+			mix: { block: 'popup' },
+			content: [
+				{
+					elem : 'title',
+					content : 'Оставить заявку'
+				},
+				{
+					block : 'request-popup-form',
+					tag: 'form',
+					content : [
+						{
+							elem : 'label',
+							tag : 'label',
+							content : 'Ваше имя'
+						},
+						{
+							elem : 'input',
+							tag: 'input',
+							attrs: { 'type': 'text' }
+						},
+						{
+							elem : 'label',
+							tag : 'label',
+							content : 'Комментарий'
+						},
+						{
+							elem : 'text',
+							tag: 'textarea',
+							content : ''
+						},
+						{
+							elem : 'phone',
+							content : [
+								{
+									tag: '',
+									content : '+7'
+								},
+								{
+									elem : 'input',
+									tag: 'input',
+									attrs: { 'type': 'text' }
+								},
+							]
+						},
+						{
+							elem : 'buttons',
+							content : [
+								{
+									elem: 'button',
+									tag: 'input',
+									attrs: { type: 'submit', value: 'Оставить заявку' }
+								}
+							]
+						}
+					]
+				}
+			]
 		}
 	];
 });
@@ -333,7 +394,7 @@ block('template-clients').replace()(function() {
 	return [
 		{
 			block: 'template-page-title',
-			title : 'Наши клиенты',
+			title : 'Наши&nbsp;клиенты',
 			underline: true
 		},
 		{
@@ -347,126 +408,62 @@ block('template-clients').replace()(function() {
 							block: 'clients-slider',
 							content: [
 								{
-									block: 'clients-slider-item',
-									content: [
-										{
-											tag: 'a',
-											attrs: { href: '#' },
-											content: [
-												{
-													tag: 'img',
-													attrs: { src: 'img/tmp/clients/1.png' },
-												}
-											]
-										}
-									]
+									url: '#',
+									thumb: 'img/tmp/clients/1.png'
 								},
 								{
-									block: 'clients-slider-item',
-									content: [
-										{
-											tag: 'a',
-											attrs: { href: '#' },
-											content: [
-												{
-													tag: 'img',
-													attrs: { src: 'img/tmp/clients/2.png' },
-												}
-											]
-										}
-									]
+									url: '#',
+									thumb: 'img/tmp/clients/2.png'
 								},
 								{
-									block: 'clients-slider-item',
-									content: [
-										{
-											tag: 'a',
-											attrs: { href: '#' },
-											content: [
-												{
-													tag: 'img',
-													attrs: { src: 'img/tmp/clients/1.png' },
-												}
-											]
-										}
-									]
+									url: '#',
+									thumb: 'img/tmp/clients/1.png'
 								},
 								{
-									block: 'clients-slider-item',
-									content: [
-										{
-											tag: 'a',
-											attrs: { href: '#' },
-											content: [
-												{
-													tag: 'img',
-													attrs: { src: 'img/tmp/clients/2.png' },
-												}
-											]
-										}
-									]
+									url: '#',
+									thumb: 'img/tmp/clients/2.png'
 								},
 								{
-									block: 'clients-slider-item',
-									content: [
-										{
-											tag: 'a',
-											attrs: { href: '#' },
-											content: [
-												{
-													tag: 'img',
-													attrs: { src: 'img/tmp/clients/1.png' },
-												}
-											]
-										}
-									]
+									url: '#',
+									thumb: 'img/tmp/clients/1.png'
 								},
 								{
-									block: 'clients-slider-item',
-									content: [
-										{
-											tag: 'a',
-											attrs: { href: '#' },
-											content: [
-												{
-													tag: 'img',
-													attrs: { src: 'img/tmp/clients/2.png' },
-												}
-											]
-										}
-									]
+									url: '#',
+									thumb: 'img/tmp/clients/2.png'
 								},
 								{
-									block: 'clients-slider-item',
-									content: [
-										{
-											tag: 'a',
-											attrs: { href: '#' },
-											content: [
-												{
-													tag: 'img',
-													attrs: { src: 'img/tmp/clients/1.png' },
-												}
-											]
-										}
-									]
+									url: '#',
+									thumb: 'img/tmp/clients/1.png'
 								},
 								{
-									block: 'clients-slider-item',
-									content: [
-										{
-											tag: 'a',
-											attrs: { href: '#' },
-											content: [
-												{
-													tag: 'img',
-													attrs: { src: 'img/tmp/clients/2.png' },
-												}
-											]
-										}
-									]
+									url: '#',
+									thumb: 'img/tmp/clients/2.png'
+								},
+								{
+									url: '#',
+									thumb: 'img/tmp/clients/1.png'
+								},
+								{
+									url: '#',
+									thumb: 'img/tmp/clients/2.png'
 								}
-							]
+							].map(function(item) {
+								return {
+									block: 'clients-slider-item',
+									content: [
+										{
+											tag: 'a',
+											attrs: { href: item.url },
+											content: [
+												{
+													tag: 'img',
+													attrs: { src: item.thumb }
+												}
+											]
+										}
+									]
+								};
+							})
 						}
 					]
 				}

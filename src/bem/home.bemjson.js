@@ -9,16 +9,18 @@
 					block: 'home-slider',
 					content: [
 						{
-							block: 'home-slider-item',
-							attrs: { style: 'background-image: url(img/tmp/slider/1.jpg);' },
-							content: ''
+							img: 'img/tmp/slider/1.jpg'
 						},
 						{
-							block: 'home-slider-item',
-							attrs: { style: 'background-image: url(img/tmp/slider/2.jpg);' },
-							content: ''
+							img: 'img/tmp/slider/2.jpg'
 						}
-					]
+					].map(function(item) {
+						return {
+							block: 'home-slider-item',
+							attrs: { style: 'background-image: url(' + item.img + ');' },
+							content: ''
+						};
+					})
 				},
 				{
 					block: 'home-advantages',
@@ -129,138 +131,71 @@
 									block: 'home-tv-slider',
 									content: [
 										{
-											block: 'home-tv-slider-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-tv/1.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на телевидении'
-												},
-												{
-													elem: 'sub-title',
-													content: 'ПЕРВЫЙ'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-tv/1.png',
+											title: 'реклама на телевидении',
+											subtitle: 'ПЕРВЫЙ',
 										},
 										{
-											block: 'home-tv-slider-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-tv/2.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на телевидении'
-												},
-												{
-													elem: 'sub-title',
-													content: 'РОССИЯ'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-tv/2.png',
+											title: 'реклама на телевидении',
+											subtitle: 'РОССИЯ',
 										},
 										{
-											block: 'home-tv-slider-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-tv/1.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на телевидении'
-												},
-												{
-													elem: 'sub-title',
-													content: 'ПЕРВЫЙ'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-tv/1.png',
+											title: 'реклама на телевидении',
+											subtitle: 'ПЕРВЫЙ',
 										},
 										{
-											block: 'home-tv-slider-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-tv/2.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на телевидении'
-												},
-												{
-													elem: 'sub-title',
-													content: 'РОССИЯ'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-tv/2.png',
+											title: 'реклама на телевидении',
+											subtitle: 'РОССИЯ',
 										},
 										{
-											block: 'home-tv-slider-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-tv/1.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на телевидении'
-												},
-												{
-													elem: 'sub-title',
-													content: 'ПЕРВЫЙ'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-tv/1.png',
+											title: 'реклама на телевидении',
+											subtitle: 'ПЕРВЫЙ',
 										},
 										{
-											block: 'home-tv-slider-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-tv/2.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на телевидении'
-												},
-												{
-													elem: 'sub-title',
-													content: 'РОССИЯ'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-tv/2.png',
+											title: 'реклама на телевидении',
+											subtitle: 'РОССИЯ',
 										}
-									]
+									].map(function(item) {
+										return {
+											block: 'home-tv-slider-item',
+											content: [
+												{
+													tag: 'a',
+													attrs: { href: item.url },
+													content : [
+														{
+															elem: 'thumb',
+															content: [
+																{
+																	tag: 'img',
+																	attrs: { src: item.thumb },
+																}
+															]
+														},
+														{
+															elem: 'title',
+															content: item.title
+														},
+														{
+															elem: 'sub-title',
+															content: item.subtitle
+														}
+													]
+												}
+											]
+										};
+									})
 								}
 							]
 						}
@@ -299,182 +234,95 @@
 									block: 'home-radio-slider',
 									content: [
 										{
-											block: 'home-radio-slider-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-radio/1.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на радиостанции'
-												},
-												{
-													elem: 'sub-title',
-													content: 'Европа Плюс'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-radio/1.png',
+											title: 'реклама на радиостанции',
+											subtitle: 'Европа Плюс',
 										},
 										{
-											block: 'home-radio-slider-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-radio/2.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на радиостанции'
-												},
-												{
-													elem: 'sub-title',
-													content: 'Русское Радио'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-radio/2.png',
+											title: 'реклама на радиостанции',
+											subtitle: 'Русское Радио',
 										},
 										{
-											block: 'home-radio-slider-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-radio/1.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на радиостанции'
-												},
-												{
-													elem: 'sub-title',
-													content: 'Европа Плюс'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-radio/1.png',
+											title: 'реклама на радиостанции',
+											subtitle: 'Европа Плюс',
 										},
 										{
-											block: 'home-radio-slider-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-radio/2.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на радиостанции'
-												},
-												{
-													elem: 'sub-title',
-													content: 'Русское Радио'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-radio/2.png',
+											title: 'реклама на радиостанции',
+											subtitle: 'Русское Радио',
 										},
 										{
-											block: 'home-radio-slider-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-radio/1.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на радиостанции'
-												},
-												{
-													elem: 'sub-title',
-													content: 'Европа Плюс'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-radio/1.png',
+											title: 'реклама на радиостанции',
+											subtitle: 'Европа Плюс',
 										},
 										{
-											block: 'home-radio-slider-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-radio/2.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на радиостанции'
-												},
-												{
-													elem: 'sub-title',
-													content: 'Русское Радио'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-radio/2.png',
+											title: 'реклама на радиостанции',
+											subtitle: 'Русское Радио',
 										},
 										{
-											block: 'home-radio-slider-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-radio/1.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на радиостанции'
-												},
-												{
-													elem: 'sub-title',
-													content: 'Европа Плюс'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-radio/1.png',
+											title: 'реклама на радиостанции',
+											subtitle: 'Европа Плюс',
 										},
 										{
-											block: 'home-radio-slider-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/on-radio/2.png' },
-														}
-													]
-												},
-												{
-													elem: 'title',
-													content: 'реклама на радиостанции'
-												},
-												{
-													elem: 'sub-title',
-													content: 'Русское Радио'
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/on-radio/2.png',
+											title: 'реклама на радиостанции',
+											subtitle: 'Русское Радио',
+										},
+										{
+											url: '#',
+											thumb: 'img/tmp/on-radio/1.png',
+											title: 'реклама на радиостанции',
+											subtitle: 'Европа Плюс',
+										},
+										{
+											url: '#',
+											thumb: 'img/tmp/on-radio/2.png',
+											title: 'реклама на радиостанции',
+											subtitle: 'Русское Радио',
 										}
-									]
+									].map(function(item) {
+										return {
+											block: 'home-radio-slider-item',
+											content: [
+												{
+													tag: 'a',
+													attrs: { href: item.url },
+													content : [
+														{
+															elem: 'thumb',
+															content: [
+																{
+																	tag: 'img',
+																	attrs: { src: item.thumb },
+																}
+															]
+														},
+														{
+															elem: 'title',
+															content: item.title
+														},
+														{
+															elem: 'sub-title',
+															content: item.subtitle
+														}
+													]
+												}
+											]
+										};
+									})
 								}
 							]
 						}
@@ -496,156 +344,85 @@
 									block: 'home-news-slider',
 									content: [
 										{
-											block: 'home-news-slider-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/last-news/1.png' },
-														}
-													]
-												},
-												{
-													elem: 'info',
-													content: [
-														{
-															elem: 'title',
-															cls: 'js-dotted',
-															content: [
-																{
-																	tag: 'a',
-																	attrs: { href: '#' },
-																	content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-																}
-															]
-														},
-														{
-															elem: 'date',
-															content: '10.12.15'
-														},
-														{
-															elem: 'text',
-															cls: 'js-dotted',
-															content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-														},
-														{
-															elem: 'more',
-															content: [
-																{
-																	block: 'more-button',
-																	tag: 'a',
-																	attrs: { href: '#' },
-																	content: 'подробнее'
-																}
-															]
-														}
-													]
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/last-news/1.png',
+											title: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.',
+											date: '10.12.15',
+											text: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
 										},
 										{
-											block: 'home-news-slider-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/last-news/1.png' },
-														}
-													]
-												},
-												{
-													elem: 'info',
-													content: [
-														{
-															elem: 'title',
-															cls: 'js-dotted',
-															content: [
-																{
-																	tag: 'a',
-																	attrs: { href: '#' },
-																	content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-																}
-															]
-														},
-														{
-															elem: 'date',
-															content: '10.12.15'
-														},
-														{
-															elem: 'text',
-															cls: 'js-dotted',
-															content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-														},
-														{
-															elem: 'more',
-															content: [
-																{
-																	block: 'more-button',
-																	tag: 'a',
-																	attrs: { href: '#' },
-																	content: 'подробнее'
-																}
-															]
-														}
-													]
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/last-news/1.png',
+											title: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.',
+											date: '10.12.15',
+											text: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
 										},
 										{
-											block: 'home-news-slider-item',
-											content: [
-												{
-													elem: 'thumb',
-													content: [
-														{
-															tag: 'img',
-															attrs: { src: 'img/tmp/last-news/1.png' },
-														}
-													]
-												},
-												{
-													elem: 'info',
-													content: [
-														{
-															elem: 'title',
-															cls: 'js-dotted',
-															content: [
-																{
-																	tag: 'a',
-																	attrs: { href: '#' },
-																	content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-																}
-															]
-														},
-														{
-															elem: 'date',
-															content: '10.12.15'
-														},
-														{
-															elem: 'text',
-															cls: 'js-dotted',
-															content: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
-														},
-														{
-															elem: 'more',
-															content: [
-																{
-																	block: 'more-button',
-																	tag: 'a',
-																	attrs: { href: '#' },
-																	content: 'подробнее'
-																}
-															]
-														}
-													]
-												}
-											]
+											url: '#',
+											thumb: 'img/tmp/last-news/1.png',
+											title: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.',
+											date: '10.12.15',
+											text: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
+										},
+										{
+											url: '#',
+											thumb: 'img/tmp/last-news/1.png',
+											title: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.',
+											date: '10.12.15',
+											text: 'Энергоснабжение Южной Осетии восстановлено. Энергоснабжение Южной Осетии восстановлено.'
 										}
-									]
+									].map(function(item) {
+										return {
+											block: 'home-news-slider-item',
+											content: [
+												{
+													elem: 'thumb',
+													content: [
+														{
+															tag: 'img',
+															attrs: { src: 'img/tmp/last-news/1.png' },
+														}
+													]
+												},
+												{
+													elem: 'info',
+													content: [
+														{
+															elem: 'title',
+															cls: 'js-dotted',
+															content: [
+																{
+																	tag: 'a',
+																	attrs: { href: item.url },
+																	content: item.title
+																}
+															]
+														},
+														{
+															elem: 'date',
+															content: item.date
+														},
+														{
+															elem: 'text',
+															cls: 'js-dotted',
+															content: item.text
+														},
+														{
+															elem: 'more',
+															content: [
+																{
+																	block: 'more-button',
+																	tag: 'a',
+																	attrs: { href: item.url },
+																	content: 'подробнее'
+																}
+															]
+														}
+													]
+												}
+											]
+										};
+									})
 								},
 								{
 									elem: 'other',
