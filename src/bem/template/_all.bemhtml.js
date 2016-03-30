@@ -611,17 +611,6 @@ block('template-footer').replace()(function() {
 																			elem: 'link',
 																			tag: 'a',
 																			attrs: { href: '#' },
-																			content: 'Лицензии'
-																		}
-																	]
-																},
-																{
-																	elem: 'item',
-																	content: [
-																		{
-																			elem: 'link',
-																			tag: 'a',
-																			attrs: { href: '#' },
 																			content: 'Партнеры'
 																		}
 																	]
@@ -656,17 +645,6 @@ block('template-footer').replace()(function() {
 																			tag: 'a',
 																			attrs: { href: '#' },
 																			content: 'Вакансии'
-																		}
-																	]
-																},
-																{
-																	elem: 'item',
-																	content: [
-																		{
-																			elem: 'link',
-																			tag: 'a',
-																			attrs: { href: '#' },
-																			content: 'Новости компании'
 																		}
 																	]
 																}
@@ -1178,17 +1156,6 @@ block('template-header').replace()(function() {
 											tag: 'a',
 											attrs: { href: '#' },
 											content: 'Реклама на радио'
-										}
-									]
-								},
-								{
-									elem: 'item',
-									content: [
-										{
-											elem: 'link',
-											tag: 'a',
-											attrs: { href: '#' },
-											content: 'Новости'
 										}
 									]
 								},

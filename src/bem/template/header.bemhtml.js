@@ -198,17 +198,6 @@ block('template-header').replace()(function() {
 											elem: 'link',
 											tag: 'a',
 											attrs: { href: '#' },
-											content: 'Новости'
-										}
-									]
-								},
-								{
-									elem: 'item',
-									content: [
-										{
-											elem: 'link',
-											tag: 'a',
-											attrs: { href: '#' },
 											content: 'Отзывы'
 										}
 									]
