@@ -992,9 +992,11 @@ block('template-header').replace()(function() {
 									content: [
 										{
 											elem: 'list',
+											tag: 'ul',
 											content: [
 												{
 													elem: 'item',
+													tag: 'li',
 													content: [
 														{
 															elem: 'link',
@@ -1006,6 +1008,7 @@ block('template-header').replace()(function() {
 												},
 												{
 													elem: 'item',
+													tag: 'li',
 													content: [
 														{
 															elem: 'link',
