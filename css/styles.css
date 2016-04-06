@@ -697,7 +697,8 @@ a {
     width: 191px;
     height: 37px;
     line-height: 37px;
-    padding: 0 19px;
+    padding-left: 19px;
+    padding-right: 19px;
     border-radius: 5px;
     background-color: #FFF;
     box-shadow: inset 1px 1.7px 5px rgba(0, 0, 0, 0.17);
@@ -2268,7 +2269,8 @@ a {
     width: 191px;
     height: 37px;
     line-height: 37px;
-    padding: 0 19px;
+    padding-left: 19px;
+    padding-right: 19px;
     border-radius: 5px;
     background-color: #FFF;
     box-shadow: inset 1px 1.7px 5px rgba(0, 0, 0, 0.17);
@@ -2520,7 +2522,8 @@ a {
   padding-top: 21px;
   height: 875px;
   background: #cecece url(../img/contacts-map.jpg) no-repeat 50% 0;
-  position: relative; }
+  position: relative;
+  margin-bottom: -35px; }
   .contacts__info {
     position: absolute;
     width: 280px;
@@ -2641,7 +2644,8 @@ a {
     background: #fff;
     border-radius: 2px;
     box-shadow: inset 1px 1.7px 5px rgba(0, 0, 0, 0.17);
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     color: #0C385D;
     font-size: 17px;
     margin-bottom: 17px; }
@@ -2706,7 +2710,8 @@ a {
     width: 148px;
     height: 48px;
     line-height: 48px;
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     box-shadow: inset 1px 1.7px 5px rgba(0, 0, 0, 0.17);
     color: #0C385D;
     font-size: 17px;
@@ -2844,7 +2849,8 @@ a {
     border: 1px solid #CBCBCB;
     border-radius: 5px;
     box-shadow: 0.5px 0.9px 0 #FFF;
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     color: #707070;
     font-size: 48px;
     margin-left: 20px; }
@@ -2962,7 +2968,8 @@ a {
     line-height: 39px;
     border: 1px solid #CBCBCB;
     border-radius: 5px;
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     color: #707070;
     font-size: 18px;
     margin-bottom: 20px; }
@@ -2997,7 +3004,8 @@ a {
     border: 1px solid #CBCBCB;
     border-radius: 5px;
     box-shadow: 0.5px 0.9px 0 #FFF;
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     color: #707070;
     font-size: 48px;
     margin-left: 20px; }

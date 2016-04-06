@@ -405,7 +405,7 @@ block('template-footer').replace()(function() {
 														{
 															tag: 'a',
 															attrs: { href: 'mailto:info@mediaexp.ru' },
-															content: 'mailto:info@mediaexp.ru'
+															content: 'info@mediaexp.ru'
 														}
 													]
 												},

@@ -25,7 +25,7 @@
 				{
 					block: 'template-page-title',
 					underline: true,
-					title : 'Наши партнеры'
+					title : 'Наши&nbsp;партнеры'
 				},
 				{
 					block: 'partners',

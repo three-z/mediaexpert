@@ -137,7 +137,7 @@
 												{
 													tag: 'input',
 													elem: 'button',
-													attrs: { type: 'submit', placeholder: 'Отправить' }
+													attrs: { type: 'submit', value: 'Отправить' }
 												}
 											]
 										}
