@@ -1131,12 +1131,52 @@ block('template-header').replace()(function() {
 								},
 								{
 									elem: 'item',
+									mods: { 'dropdown': true },
 									content: [
 										{
 											elem: 'link',
 											tag: 'a',
 											attrs: { href: '#' },
 											content: 'Компания'
+										},
+										{
+											elem: 'list',
+											content: [
+												{
+													elem: 'item',
+													mods: { 'active': true },
+													content: [
+														{
+															elem: 'link',
+															tag: 'a',
+															attrs: { href: '#' },
+															content: 'О компании'
+														}
+													]
+												},
+												{
+													elem: 'item',
+													content: [
+														{
+															elem: 'link',
+															tag: 'a',
+															attrs: { href: '#' },
+															content: 'Лицензии'
+														}
+													]
+												},
+												{
+													elem: 'item',
+													content: [
+														{
+															elem: 'link',
+															tag: 'a',
+															attrs: { href: '#' },
+															content: 'Партнеры'
+														}
+													]
+												}
+											]
 										}
 									]
 								},
